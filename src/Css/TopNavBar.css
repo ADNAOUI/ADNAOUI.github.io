@@ -3,5 +3,7 @@
     padding:1rem;
 }
 .imgTopNavBar{
+    position:absolute;
+    margin-top: -1.2rem;
     width:10rem;
 }
