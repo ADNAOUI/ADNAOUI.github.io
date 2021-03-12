@@ -1,0 +1,24 @@
+.backgroundVisitorSitePresentation{
+    background-color: #353535;
+    height:60rem;
+}
+.pictureVisitorSitePresentation{
+    position:absolute;
+    margin-left: 60rem;
+}
+.titleVisitorSitePresentation{
+    font-family: Roboto;
+    font-size: 6rem;
+    color:white;
+}
+.pVisitorSitePresentation{
+    font-family: Roboto;
+    text-align: justify;
+    color:white;
+}
+.row{
+    margin-left: 1rem;
+}
+.linkVisitorSitePresentation{
+    text-decoration: none;
+}
