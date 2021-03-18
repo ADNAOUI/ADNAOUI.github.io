@@ -1,0 +1,55 @@
+.backgroundTopNavBar{
+    background-color: #000D11;
+    width: 100%;
+    height: 67px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.imgTopNavBar{
+    width:140px;
+    position: absolute;
+}
+.positionButtonConnexionInscription{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.buttonConnexion{
+    margin: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: gray !important;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:inset    2px 2px 2px 0px rgba(255,255,255,.5),
+                        7px 7px 20px 0px rgba(0,0,0,.1),
+                        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.buttonInscription {
+    margin: 12px;
+    margin-right: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #E04980 !important;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow:inset    2px 2px 2px 0px rgba(255,255,255,.5),
+                        7px 7px 20px 0px rgba(0,0,0,.1),
+                        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+
+.interrogationPointTopBar{
+    color: white;
+    margin: 20px 30px 22px 0;
+    font-size: 20px;
+}
