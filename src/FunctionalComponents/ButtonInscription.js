@@ -3,10 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/ButtonTopNavBar.css';
 import {Button} from 'react-bootstrap';
 
-function ButtonTopNavBar (props) {
+export default function ButtonInscription (props) {
     return(
         <Button class="buttonInscription btn btn-button" >{props.text}</Button>
     );
 }
-
-export default ButtonTopNavBar;

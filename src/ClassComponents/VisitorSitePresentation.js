@@ -1,11 +1,11 @@
 import TopNavBar from '../ClassComponents/TopNavBar';
 import Footer from '../ClassComponents/Footer';
-import React from 'react';
+import React, {Component} from 'react';
 import '../Css/VisitorSitePresentation.css';
 import SocialMediaServicesRR from '../img/socialMediaServicesRR.png';
 import ButtonVisitorSitePresentation from '../FunctionalComponents/ButtonVisitorSitePresentation';
 
-class VisitorSitePresentation extends React.Component {
+class VisitorSitePresentation extends Component {
 
   render(){
     return(
@@ -15,6 +15,7 @@ class VisitorSitePresentation extends React.Component {
 
           <div class="row col-5">
             <h1 class="titleVisitorSitePresentation">Services de média sociaux</h1>
+            <img src={SocialMediaServicesRR} class="imgVisitorSitePresentation"/>
           </div>
 
           <div class="row col-3">
