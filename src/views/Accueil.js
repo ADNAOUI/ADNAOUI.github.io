@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 import '../index.css';
 
 import '../assets/css/view/Accueil.css';
-import ButtonVisitorSitePresentation from '../FunctionalComponents/ButtonVisitorSitePresentation';
+import image1 from '../assets/img/imgHome/1.png';
+import image2 from '../assets/img/imgHome/2.png';
+import image3 from '../assets/img/imgHome/3.png';
 
 export default class Accueil extends Component {
 
@@ -10,349 +12,32 @@ export default class Accueil extends Component {
     return(
       <section>
         <div>
-          <h1 class="titleVisitorSitePresentation">Accueil des services de média sociaux</h1>
 
-          <div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
+          <div class="col-12 dispositionImageHome">
+            <h1 class="col-6">Enrichissez, développez et créez des relations</h1>
+            <img src={image1} class="col-6" alt="premiere image"/>
           </div>
 
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
+          <div class="col-12 dispositionImageHome">
+            <h1 class="col-6 ">Enrichissez, développez et créez vos relations</h1>
+            <img src={image2} class="col-6" alt="deuxieme image"/>
           </div>
 
-          <div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
+          <div class="col-12 dispositionBlocHome">
+            <span class="col-6">Pourquoi choisir Ressources Relationnelles ?</span>
+            <h1 class="col-6">Créez et Consultez tous types de contenus !</h1>
+            <div>
+              <p class="">blue</p>
+              <p class="">red</p>
+              <p class="">green</p>
+            </div>
           </div>
 
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
+          <div class="col-12 dispositionImageHome">
+            <h1 class="col-6">Enrichissez, développez et créez vos relations</h1>
+            <img src={image3} class="col-6" alt="troisieme image"/>
           </div>
 
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div><div class="col-12">
-            <p class="pVisitorSitePresentation">
-              It is a long established fact that a reader will be distracted by the
-              readable content of a page when looking at its layout. The point of using
-              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-              as opposed to using 'Content here, content here', making it look like readable
-              English.
-            </p>
-          </div>
-
-          <div class="link col-12">
-            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
-            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
-          </div>
         </div>
       </section>
     );

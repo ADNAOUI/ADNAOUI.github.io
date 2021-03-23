@@ -1,26 +1,14 @@
-.backgroundVisitorSitePresentation{
-    background-color: #353535;
-    margin-left: 250px;
-    margin-top: 67px;
-}
-.imgVisitorSitePresentation{
-    position:absolute;
-    margin-left: 60rem;
-    width: 200px;
-}
-.titleVisitorSitePresentation{
+.titleVisitorSitePresentationTendances{
     font-family: Roboto;
     font-size: 6rem;
     color:white;
 }
-.pVisitorSitePresentation{
+.pVisitorSitePresentationTendances{
     font-family: Roboto;
     text-align: justify;
     color:white;
 }
-.row{
-    margin-left: 1rem;
-}
-.linkVisitorSitePresentation{
+
+.linkVisitorSitePresentationTendances{
     text-decoration: none;
 }
