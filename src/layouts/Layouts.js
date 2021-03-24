@@ -9,8 +9,7 @@ import TopNavBar from "../components/TopNavBar/TopNavBar.js";
 
 import routes from "../routes.js";
 
-export default class Accueil extends React.Component {
-  //Problème de nommage de classe ?
+export default class Layouts extends React.Component {
 
   render() {
     return (

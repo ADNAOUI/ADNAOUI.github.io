@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Container} from 'react-bootstrap';
+import ResourceCard from '../ClassComponents/ResourceCard.js';
 import '../index.css';
 import '../assets/css/classComponents/AccueilContainer.css';
 
@@ -9,7 +10,7 @@ export default class AccueilContainer extends Component {
     return(
       <section>
         <Container fluid>
-          e
+          <ResourceCard />
         </Container>
       </section>
     );

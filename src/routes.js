@@ -24,7 +24,7 @@ import {FcSelfie} from 'react-icons/fc';
 const dashRoutes = [
   {
     path: "/accueilContainer",
-    name: "AccueilContainer",
+    name: "Accueil",
     icon: <MdHome/>,
     component: AccueilContainer,
     layout: "/ressources_relationnelles",
