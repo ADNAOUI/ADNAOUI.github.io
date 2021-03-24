@@ -10,6 +10,7 @@ import TopNavBar from "../components/TopNavBar/TopNavBar.js";
 import routes from "../routes.js";
 
 export default class Accueil extends React.Component {
+  //Problème de nommage de classe ?
 
   render() {
     return (
@@ -32,11 +33,11 @@ export default class Accueil extends React.Component {
                 />
               );
             })}
-            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
+            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueilContainer" />
           </Switch>
         </div>
 
-        <Footer/>
+        <Footer />
       </main>
     );
   }

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../index.css';
 
-import '../assets/css/view/Tendances.css';
+import '../assets/css/classComponents/Tendances.css';
 import ButtonVisitorSitePresentation from '../FunctionalComponents/ButtonVisitorSitePresentation';
 
 export default class Tendances extends Component {
