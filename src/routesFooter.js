@@ -9,21 +9,21 @@ import Help from './views/Help.js';
 
 const footerRoutes = [
   {
-    pathFooter: "/about",
-    nameFooter: "About",
-    component: About,
+    pathFooter: "/help",
+    nameFooter: "Aides",
+    component: Help,
     layoutFooter: "/ressources_relationnelles",
   },
   {
     pathFooter: "/faq",
-    nameFooter: "Faq",
+    nameFooter: "FAQ",
     component: Faq,
     layoutFooter: "/ressources_relationnelles",
   },
   {
-    pathFooter: "/conduite",
-    nameFooter: "Conduite",
-    component: Conduite,
+    pathFooter: "/about",
+    nameFooter: "About",
+    component: About,
     layoutFooter: "/ressources_relationnelles",
   },
   {
@@ -34,16 +34,16 @@ const footerRoutes = [
   },
   {
     pathFooter: "/politicalCookies",
-    nameFooter: "PoliticalCookies",
+    nameFooter: "Politique de Cookies",
     component: PoliticalCookies,
     layoutFooter: "/ressources_relationnelles",
   },
   {
-    pathFooter: "/help",
-    nameFooter: "Help",
-    component: Help,
+    pathFooter: "/conduite",
+    nameFooter: "Lignes de Conduite",
+    component: Conduite,
     layoutFooter: "/ressources_relationnelles",
-  },
+  }
 ];
 
 export default footerRoutes ;

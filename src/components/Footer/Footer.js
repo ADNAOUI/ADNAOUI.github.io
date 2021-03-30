@@ -27,7 +27,7 @@ export default class Footer extends Component{
                     <img src={Logo_Ministere} class="imgFooter" alt="Logo du ministère"/>
                 </div>
 
-                <ul>
+                <ul class="positionLienFooter">
                     {this.props.routesFooter.map((prop, key) => {
                         if (prop.redirect) return null;
                             return (
