@@ -1,0 +1,39 @@
+#resourceCard {
+    width: 300px;
+    font-family: 'roboto';
+}
+
+.card {
+    border-color: black;
+}
+
+/*----------- HEADER ----------*/
+#resourceCard .lbl_publicationResourceCard {
+    background-image: url(/src/assets/img/BackgroundBlueHeadCard.png);
+    background-repeat: no-repeat;
+    width:100%;
+}
+#resourceCard .span_publicationResourceCard {
+    padding: 7px;
+    font-size: 13px;
+    color: white;
+}
+
+/*---------- BODY ----------*/
+
+#resourceCard .titleResourceCard {
+    padding: 0 20px;
+    color: white;
+}
+#resourceCard .contentPictureResourceCard {
+    padding: 0 20px 10px 20px;
+}
+
+/*----------- FOOTER ----------*/
+.FooterResourceCard {
+    background-color: #3FCCFF;
+    height: 50px;
+}
+.IconResourceCard {
+    width: 55px;
+}

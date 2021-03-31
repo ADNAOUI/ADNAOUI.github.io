@@ -9,8 +9,8 @@ export default class AccueilContainer extends Component {
   render(){
     return(
       <section>
-        <Container fluid>
-          <ResourceCard />
+        <Container fluid class="accueilContainer">
+          <ResourceCard/>
         </Container>
       </section>
     );
