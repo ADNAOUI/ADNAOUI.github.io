@@ -8,8 +8,10 @@ import Footer from "../components/Footer/Footer.js";
 import TopNavBar from "../components/TopNavBar/TopNavBar.js";
 
 import routes from "../routes.js";
+import routesFooter from "../routesFooter.js";
 
-export default class Accueil extends React.Component {
+
+export default class Layouts extends React.Component {
 
   render() {
     return (
@@ -21,7 +23,7 @@ export default class Accueil extends React.Component {
           routes={routes}
         />
 
-        <div ref={this.mainPanel}>
+        <div>
           <Switch>
             {routes.map((prop, key) => {
               return (
@@ -34,9 +36,23 @@ export default class Accueil extends React.Component {
             })}
             <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
           </Switch>
+
+          <Switch>
+            {routesFooter.map((prop, key) => {
+              return (
+                <Route
+                  path={prop.layoutFooter + prop.pathFooter}
+                  component={prop.component}
+                  key={key}
+                />
+              );
+            })}
+            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
+          </Switch>
         </div>
 
-        <Footer/>
+        <Footer  {...this.props}
+          routesFooter={routesFooter}/>
       </main>
     );
   }

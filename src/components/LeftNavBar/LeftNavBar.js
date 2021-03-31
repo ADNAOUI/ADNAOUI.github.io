@@ -36,7 +36,7 @@ export default class LeftNavBar extends Component{
                                             to={prop.layout + prop.path}
                                             className="nav-link"
                                             activeClassName="active"
-                                        >
+                                    >
                                         <i>{prop.icon}</i>
                                         <label>{prop.name}</label>
                                     </NavLink>

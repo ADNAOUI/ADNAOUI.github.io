@@ -9,6 +9,13 @@ import Professionnels from "./views/Professionnels.js";
 import Familles from "./views/Familles.js";
 import Amis from "./views/Amis.js";
 
+import About from './views/About.js';
+/* import Faq from '../../views/FAQ.js';
+import Conduite from '../../views/Conduite.js';
+import Conditions from '../../views/Conditions.js';
+import PoliticalCookies from '../../views/PolitiqueCookies.js';
+import Help from '../../views/Help.js'; */
+
 // Import pour les Icones
 import {  MdHome,
           MdAccountCircle,
@@ -85,6 +92,15 @@ const dashRoutes = [
     icon: <FaUserFriends/>,
     component: Amis,
     layout: "/ressources_relationnelles",
+  },
+
+
+  {
+    pathF: "/about",
+    nameF: "About",
+    iconF: <FaUserFriends/>,
+    componentF: About,
+    layoutF: "/ressources_relationnelles",
   }
 ];
 
