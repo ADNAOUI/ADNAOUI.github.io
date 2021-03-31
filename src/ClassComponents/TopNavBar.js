@@ -15,7 +15,7 @@ class TopNavBar extends Component {
                 <ButtonTopNavBar text="Connexion"/>
             </div>
             <div class="buttonRegistrationTopNavBar">
-                <ButtonTopNavBar text="Inscription"/>
+                <ButtonTopNavBar text="Inscription" onclick={}/>
             </div>
         </div>
         );

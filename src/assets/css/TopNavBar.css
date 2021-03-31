@@ -53,3 +53,31 @@
     margin: 20px 30px 22px 0;
     font-size: 20px;
 }
+.modal-content {
+    background-color: #001922 !important;
+    color: #fff ;
+}
+
+.content{
+    display: none;
+    
+}
+.activeContent{
+    display: block;
+    padding: 5% ;    
+}
+.activeText{
+    color :#E04980 ;
+    background-color: #001922;
+    border: none ;
+}
+.btnTab{
+    border: none ;
+    color:#fff;
+    background-color: #001922;
+}
+.btnModal{
+    background-color: #004158 ;
+    color : #3FCCFF ;
+   
+}

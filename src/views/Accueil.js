@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import '../index.css';
-
 import '../assets/css/view/Accueil.css';
 import ButtonVisitorSitePresentation from '../FunctionalComponents/ButtonVisitorSitePresentation';
 
