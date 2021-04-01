@@ -1,10 +1,15 @@
 #resourceCard {
+    position: relative;
     width: 300px;
     font-family: 'roboto';
 }
 
-.card {
-    border-color: black;
+#resourceCard hr{
+    position: absolute;
+    margin-top: 16.7rem;
+    width: 100%;
+    height: .05rem;
+    background-color:#3FCCFF;
 }
 
 /*----------- HEADER ----------*/
@@ -28,12 +33,37 @@
 #resourceCard .contentPictureResourceCard {
     padding: 0 20px 10px 20px;
 }
+#resourceCard .ProfilPictureResourceCard{
+    padding-top: 1.2rem;
+}
+#resourceCard .span_PseudonymeMembreResourceCard{
+    margin-left: .9rem;
+    color:white;
+}
+#resourceCard .span_ProfessionMembreResourceCard{
+    position:absolute;
+    font-style: italic;
+    font-size: .9rem;
+    margin-top: 1.2rem;
+    margin-left: 3.4rem;
+    color:white;
+}
 
 /*----------- FOOTER ----------*/
 .FooterResourceCard {
     background-color: #3FCCFF;
     height: 50px;
 }
-.IconResourceCard {
-    width: 55px;
+#resourceCard .iconResourceCard{
+    justify-content: center;
+    align-items: center;
+}
+#resourceCard .iconResourceCard span{
+    color:white;
+    font-weight: bold;
+    width:1.5rem;
+    margin-left: 2rem;
+}
+#resourceCard .badgeResourceCard{
+    margin-left: 2rem;
 }

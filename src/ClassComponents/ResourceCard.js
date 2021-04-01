@@ -25,6 +25,8 @@ export default class ResourceCard extends Component{
             etatRessource                : [],
             datePrePublicationRessource  : new Date(),
             datePublicationRessource     : new Date(),
+            pseudonymeMembreResourceCard : 'John Doe',
+            professionMembreResourceCard : 'Développeur informatique',
             visible                      : true
         };
     }
@@ -47,8 +49,10 @@ export default class ResourceCard extends Component{
                 <div id="lbl_publicationResourceCard" class="col-12 lbl_publicationResourceCard">
                     <span id="span_publicationResourceCard" class="span_publicationResourceCard">publié le : <strong>{this.state.datePublicationRessource.toLocaleDateString()}</strong></span>
                 </div>
+                
                 <Card style={{borderRadius: 0, borderTopRightRadius: 20, borderColor:"#3FCCFF", borderWidth: 2, shadow:50}}>
-                    <Card.Body style={{padding: 10, backgroundColor: "#303030", borderTopRightRadius: 18}}>
+                <hr/>
+                    <Card.Body style={{padding: 10, backgroundColor: "#292929", borderTopRightRadius: 18}}>
                         <div class="row titleResourceCard">
                             <Card.Title><strong>{this.state.titreRessource}</strong></Card.Title>
                         </div>
@@ -61,16 +65,16 @@ export default class ResourceCard extends Component{
                         </div>
                         <div class="row col-12 ProfilPictureResourceCard">
                             <Card.Img style={{width: '40px'}} src={resourceCardAvatar}/>
-                            <span class="span_PseudonymeMembreResourceCard">John Doe</span>
-                            <span class="span_ProfessionMembreResourceCard">Développeur</span>
+                            <span class="span_PseudonymeMembreResourceCard"><strong>{this.state.pseudonymeMembreResourceCard}</strong></span>
+                            <span class="span_ProfessionMembreResourceCard">{this.state.professionMembreResourceCard}</span>
                         </div>
                     </Card.Body>
                     <Card.Footer class="FooterResourceCard">
-                        <div class="row col-12 IconResourceCard">
-                            <IconStatResourceCard name={heartIcon} number={this.state.nombreLikeRessource}/>
-                            <IconStatResourceCard name={commentIcon} number={this.state.nombreCommentaireRessource}/>
-                            <IconStatResourceCard name={shareIcon} number={this.state.nombrePartageRessource}/>
-                            <IconStatResourceCard name={starIcon}/>
+                        <div class="row col-12 iconResourceCard">
+                            <span><IconStatResourceCard name={heartIcon} number={this.state.nombreLikeRessource}/></span>
+                            <span><IconStatResourceCard name={commentIcon} number={this.state.nombreCommentaireRessource}/></span>
+                            <span><IconStatResourceCard name={shareIcon} number={this.state.nombrePartageRessource}/></span>
+                            <span><IconStatResourceCard name={starIcon}/></span>
                         </div>
                     </Card.Footer>
                 </Card>
