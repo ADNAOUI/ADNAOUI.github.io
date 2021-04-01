@@ -14,7 +14,7 @@ export default class ResourceCard extends Component{
         this.state = {
             //ressources: []resourcesImg
             identifiantRessource         : '',
-            identifiantCategorieRessource: ["Communication", "Soi"],
+            identifiantCategorieRessource: ["Communication", "Soi", "Article"],
             titreRessource               : 'Titre de la Ressource sur une ou deux lignes si titre long',
             imageRessource               : '',
             contenuRessource             : '',
@@ -49,9 +49,10 @@ export default class ResourceCard extends Component{
                 <div id="lbl_publicationResourceCard" class="col-12 lbl_publicationResourceCard">
                     <span id="span_publicationResourceCard" class="span_publicationResourceCard">publié le : <strong>{this.state.datePublicationRessource.toLocaleDateString()}</strong></span>
                 </div>
-                
+
                 <Card style={{borderRadius: 0, borderTopRightRadius: 20, borderColor:"#3FCCFF", borderWidth: 2, shadow:50}}>
                 <hr/>
+                <div class="cardBody">
                     <Card.Body style={{padding: 10, backgroundColor: "#292929", borderTopRightRadius: 18}}>
                         <div class="row titleResourceCard">
                             <Card.Title><strong>{this.state.titreRessource}</strong></Card.Title>
@@ -59,9 +60,10 @@ export default class ResourceCard extends Component{
                         <div class="row contentPictureResourceCard">
                             <Card.Img style={{alignItems: 'center'}} src={resourcesImg}/>
                         </div>
-                        <div class="row col-12 BadgeResourceCard">
-                            <Badge variant="primary">{this.state.identifiantCategorieRessource[0]}</Badge>
-                            <Badge variant="secondary">{this.state.identifiantCategorieRessource[1]}</Badge>
+                        <div class="row col-12 badgeResourceCard">
+                            <Badge style={{borderRadius:15, backgroundColor:"#E04980", marginRight:10, borderStyle: 'solid', borderColor:"#E04980", borderWidth:2}} variant="primary">{this.state.identifiantCategorieRessource[0]}</Badge>
+                            <Badge style={{borderRadius:15, backgroundColor:"#3FCCFF", marginRight:10, borderStyle: 'solid', borderColor:"#3FCCFF", borderWidth:2}} variant="secondary">{this.state.identifiantCategorieRessource[1]}</Badge>
+                            <Badge style={{color:"#3FCCFF", borderRadius:15, backgroundColor:"#FFFFFF", marginRight:10, borderStyle: 'solid', borderColor:"#3FCCFF", borderWidth:2}} variant="secondary">{this.state.identifiantCategorieRessource[2]}</Badge>
                         </div>
                         <div class="row col-12 ProfilPictureResourceCard">
                             <Card.Img style={{width: '40px'}} src={resourceCardAvatar}/>
@@ -69,6 +71,7 @@ export default class ResourceCard extends Component{
                             <span class="span_ProfessionMembreResourceCard">{this.state.professionMembreResourceCard}</span>
                         </div>
                     </Card.Body>
+                </div>
                     <Card.Footer class="FooterResourceCard">
                         <div class="row col-12 iconResourceCard">
                             <span><IconStatResourceCard name={heartIcon} number={this.state.nombreLikeRessource}/></span>
@@ -87,7 +90,7 @@ function IconStatResourceCard(props){
     return(
         <div>
         <Card.Img src={props.name}/>
-        <span>{props.number}</span>
+        <span class="span_numberIconResourceCard">{props.number}</span>
         </div>
     )
 }

@@ -11,6 +11,9 @@
     height: .05rem;
     background-color:#3FCCFF;
 }
+#resourceCard > .card{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 0px 2px rgba(0, 0, 0, 0.25);
+}
 
 /*----------- HEADER ----------*/
 #resourceCard .lbl_publicationResourceCard {
@@ -25,7 +28,6 @@
 }
 
 /*---------- BODY ----------*/
-
 #resourceCard .titleResourceCard {
     padding: 0 20px;
     color: white;
@@ -49,21 +51,26 @@
     color:white;
 }
 
+.badgeResourceCard{
+}
+
 /*----------- FOOTER ----------*/
 .FooterResourceCard {
-    background-color: #3FCCFF;
+    background: linear-gradient(270deg, #E04980 -45.56%, rgba(255, 255, 255, 0) 100%), #00B0F0;
     height: 50px;
 }
 #resourceCard .iconResourceCard{
     justify-content: center;
     align-items: center;
 }
-#resourceCard .iconResourceCard span{
+#resourceCard .iconResourceCard > span{
+    padding: .1rem;
     color:white;
     font-weight: bold;
-    width:1.5rem;
-    margin-left: 2rem;
+    width: 1.5rem;
+    margin-top: .1rem;
+    margin-left: 2.1rem;
 }
-#resourceCard .badgeResourceCard{
-    margin-left: 2rem;
+#resourceCard .iconResourceCard > span .span_numberIconResourceCard {
+    margin-left: .3rem;
 }
