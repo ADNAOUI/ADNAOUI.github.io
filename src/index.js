@@ -12,7 +12,7 @@ ReactDOM.render(
   <Router history={hist}>
     <Switch>
       <Route path="/ressources_relationnelles" render={(props) => <Layouts {...props} />} />
-      <Redirect to="/ressources_relationnelles/accueil" />
+      <Redirect to="/ressources_relationnelles/AccueilContainer" />
     </Switch>
   </Router>,
   document.getElementById('root')

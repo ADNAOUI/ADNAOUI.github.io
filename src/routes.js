@@ -1,5 +1,5 @@
 //Import pour les vues
-import Accueil from "./views/Accueil.js";
+import AccueilContainer from "./ClassComponents/AccueilContainer.js";
 import Tendances from "./views/Tendances.js";
 import MonCompte from "./views/MonCompte.js";
 import Forum from "./views/Forum.js";
@@ -23,17 +23,17 @@ import {  MdHome,
           MdWork,
         } from 'react-icons/md';
 import {VscFlame} from 'react-icons/vsc';
-import { GiLovers, GiFamilyTree } from 'react-icons/gi';
+import {GiLovers, GiFamilyTree} from 'react-icons/gi';
 import {FaUserFriends} from 'react-icons/fa';
 import {FcSelfie} from 'react-icons/fc';
 
 
 const dashRoutes = [
   {
-    path: "/accueil",
+    path: "/accueilContainer",
     name: "Accueil",
     icon: <MdHome/>,
-    component: Accueil,
+    component: AccueilContainer,
     layout: "/ressources_relationnelles",
   },
   {
@@ -104,4 +104,4 @@ const dashRoutes = [
   }
 ];
 
-export default dashRoutes ;
+export default dashRoutes;

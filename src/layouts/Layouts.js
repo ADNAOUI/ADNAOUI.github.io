@@ -34,7 +34,7 @@ export default class Layouts extends React.Component {
                 />
               );
             })}
-            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
+            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueilContainer" />
           </Switch>
 
           <Switch>
@@ -47,11 +47,11 @@ export default class Layouts extends React.Component {
                 />
               );
             })}
-            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
+            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueilContainer" />
           </Switch>
         </div>
 
-        <Footer  {...this.props}
+        <Footer {...this.props}
           routesFooter={routesFooter}/>
       </main>
     );
