@@ -13,7 +13,7 @@
 .positionButtonConnexionInscription{
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .buttonConnexion{
@@ -36,7 +36,7 @@
     margin-right: 25px;
     padding: 5px;
     border-radius: 5px;
-    background-color: #E04980 !important;
+    background-color: #E04980;
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -46,6 +46,12 @@
                         7px 7px 20px 0px rgba(0,0,0,.1),
                         4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .interrogationPointTopBar{
@@ -60,16 +66,36 @@
 
 .content{
     display: none;
-    
 }
 .activeContent{
-    display: block;
-    padding: 5% ;    
+    display: grid;
+    padding: 6px 12px;
 }
 .activeText{
     color :#E04980 ;
-    background-color: #001922;
-    border: none ;
+    font-weight: bold;
+    border-bottom: 2px solid #E04980;
+    cursor: pointer;
+}
+.activeText:hover{
+    text-decoration: none;
+    color: #E04980;
+}
+.positionBoutonInscriptionConnexion{
+    position: absolute;
+    top: 46px;
+    padding: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.btnTopNavBarInsCon{
+    cursor: pointer;
+    color: white;
+}
+.btnTopNavBarInsCon:hover{
+    text-decoration: none;
+    color: #3FCCFF;
 }
 .btnTab{
     border: none ;
@@ -77,7 +103,32 @@
     background-color: #001922;
 }
 .btnModal{
+    text-align: center;
     background-color: #004158 ;
-    color : #3FCCFF ;
-   
+    color : #3FCCFF;
+    margin: 12px;
+    margin-right: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.modal-header .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+.modal-header .close:hover{
+    color: #E04980;
+    text-shadow: none;
 }
