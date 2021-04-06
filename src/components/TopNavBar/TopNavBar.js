@@ -1,5 +1,5 @@
 import React, { useState, Component } from 'react';
-import { Button, Form, Modal} from 'react-bootstrap';
+import { Form, Modal} from 'react-bootstrap';
 
 //CSS
 import '../../assets/css/TopNavBar.css';
