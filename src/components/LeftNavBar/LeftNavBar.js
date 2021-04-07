@@ -1,7 +1,9 @@
-import React, {Component} from 'react';
+import React, {useState, Component} from 'react';
+import {Button, Form, Modal} from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 import '../../assets/css/LeftNavBar.css';
+
 export default class LeftNavBar extends Component{
     constructor(props) {
         super(props);
@@ -16,7 +18,7 @@ export default class LeftNavBar extends Component{
         return(
             <nav class="LeftNavBar">
                 <div class="positionBoutonAjouterRessources">
-                    <ButtonAjouterRessources text="Ajouter une Ressource"/>
+                    <ButtonAddRessources text="Ajouter une Ressource"/>
                 </div>
                 <ul>
                     {this.props.routes.map((prop, key) => {
@@ -50,8 +52,29 @@ export default class LeftNavBar extends Component{
     }
 }
 
-function ButtonAjouterRessources(props){
+function ButtonAddRessources(props){
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return(
-        <button class="btn-button custom-btn buttonAjouterRessources">{props.text}</button>
+        <div>
+            <button class="btn-button custom-btn buttonAddResources" onClick={handleShow}>{props.text}</button>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <h1>Ajouter une ressource</h1>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form.Group controlId="formAddResources">
+                        <Form.Label>
+                            <Form.Control type="text" placeholder="Entrez un titre"/>
+                        </Form.Label>
+                        <Form.Label>
+                            <Form.Control type="button" placeholder="économie"/>
+                        </Form.Label>
+                    </Form.Group>
+                </Modal.Body>
+            </Modal>
+        </div>
     )
 }
