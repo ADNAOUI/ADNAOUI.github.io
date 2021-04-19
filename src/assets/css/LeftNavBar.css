@@ -48,47 +48,88 @@ nav>ul>li>label{
 }
 
 
-/*Bouton Ajouter une Ressource*/
-.positionBoutonAddResources{
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 30px;
-}
+/*----------- BOUTON & MODALE : AJOUTER UNE RESSOURCE ------------*/
  .custom-btn {
     color: #fff;
     border-radius: 50px;
     padding: 10px 20px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
+    font-family: 'Roboto';
+    font-weight: 400;
     cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
+    transition: all 0.3s;
   }
-.buttonAddResources {
+.buttonAddResource {
+    margin-left: .8rem;
+    margin-top: 1rem;
+    margin-bottom: .8rem;
     border: none;
-    background: rgb(251,33,117);
-      background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
-      color: #fff;
-      overflow: hidden;
+    background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
+    border-radius: 46px;
+    overflow: hidden;
+    backface-visibility: hidden;
   }
-  .buttonAddResources:hover {
+  .buttonAddResource:hover {
       text-decoration: none;
-      color: #fff;
+      color: white;
+      opacity: .9;
   }
+.buttonAddResource span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.buttonAddResourceTransition::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    transition: all 0.3s;
+}
+.custom-btn::before{
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+.custom-btn::after{
+    content:'';
+    position: absolute;
+    z-index:-1;
+    transition: all 0.3s;
+}
+/*------------ MODALE ADD RESOURCE ------------ */
+input[type=checkbox], input[type=radio]{
+    display:none;
+}
+.form-check{
+    cursor: pointer;
+    padding:0 1.1rem;
+}
+.form-check-label{
+    cursor: pointer;
+}
 
-  .buttonAddResources:hover{
-    opacity: .9;
-  }
-  .buttonAddResources:active{
-    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
-                -4px -4px 6px 0 rgba(116, 125, 136, .2),
-      inset -4px -4px 6px 0 rgba(255,255,255,.2),
-      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
-  }
+/*------------ CATEGORIE ADD RESOURCE ----------- */
 
+.categorieAddResource{
+    display:flex;
+}
+
+.badge_AddResource {
+    height: 30px;
+    border-style: solid;
+    border-color: #E04980;
+    border-radius: 20px;
+}
+.cb_AddResource {
+    cursor: pointer;
+}
+
+/*----------- BOUTTON ADD RESOURCE ------------*/
+
+.btn_ValiderAddResource {
+    border-style: none;
+    color:white;
+    width: 5rem;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
+}
