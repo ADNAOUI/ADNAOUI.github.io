@@ -53,14 +53,14 @@ export default class ResourceCard extends Component{
                 <div class="cardRessource">
                 <hr/>
                 <div class="cardBody">
-                    <Card.Body style={{padding: 10, backgroundColor: "#292929", borderTopRightRadius: 18}}>
+                    <Card.Body style={{padding: 10, backgroundColor: "#F7F7F7", borderTopRightRadius: 18}}>
                         <div class="row titleResourceCard">
                             <Card.Title><strong class="tailleTitreCardRessources">{this.state.titreRessource}</strong></Card.Title>
                         </div>
                         <div class="row contentPictureResourceCard">
                             <Card.Img style={{alignItems: 'center'}} src={resourcesImg}/>
                         </div>
-                        <div class="">
+                        <div class="colorCardBadge">
                             <span class="badgeRessourceCard" variant="primary">{this.state.identifiantCategorieRessource[0]}</span>
                             <span class="badgeRessourceCard" variant="secondary">{this.state.identifiantCategorieRessource[1]}</span>
                             <span class="badgeRessourceCard" variant="secondary">{this.state.identifiantCategorieRessource[2]}</span>

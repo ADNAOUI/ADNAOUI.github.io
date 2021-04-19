@@ -5,13 +5,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 main{
-  background-color: #353535;
+  background-color: #ffffff;
 }
 
 section{
-  background-color: #353535;
+  background-color: #ffffff;
   margin-left: 230px;
-  margin-top: 67px;
+  margin-top: 55px;
 }
 
 code {

@@ -6,7 +6,7 @@ import '../../assets/css/TopNavBar.css';
 
 //Images, Icones
 import { FaQuestion } from 'react-icons/fa';
-import Logo from '../../assets/img/RessourceRelationnelle_LogoFondFonceCut.png';
+import Logo from '../../assets/img/logo/logoSombre.png';
 
 export default class TopNavBar extends Component {
     render()
@@ -14,11 +14,8 @@ export default class TopNavBar extends Component {
         return (
             <div class="backgroundTopNavBar">
                 <img src={Logo} class="imgTopNavBar" alt="ressourcesRelationnelles" />
-
                 <div class="positionButtonConnexionInscription">
-
                     <ButtonInscription/>
-
                     <ButtonConnexion text="Se Connecter" />
                     <InterrogationPoint />
                 </div>
@@ -34,7 +31,6 @@ function ButtonInscription() {
     }
 
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 

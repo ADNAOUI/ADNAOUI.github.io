@@ -17,7 +17,7 @@ export default class Help extends Component {
 
   render(){
     return(
-      <section>
+      <section id="remonterHaut">
         <h1 class="titleVisitorSitePresentation">Aide des services de média sociaux</h1>
         <CardGroup>
         <div class="positionCardParentHelp col-12">

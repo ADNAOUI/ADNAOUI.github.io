@@ -1,6 +1,7 @@
 .accordion>.card>.card-header {   
     margin-bottom: 10px;
     background: white;
+    box-shadow: 6px -1px 11px 0px black;
 }
 .positionCollapseFaq {
     background-color: white;
@@ -17,8 +18,8 @@
     color: #007bff;
 }
 .card {
-    background-color: #2D2D2D;
+    border: none;
 }
 .card-body {
-    color: #fff;
+    color: black;
 }

@@ -15,11 +15,14 @@
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
+    box-shadow: rgb(0 0 0 / 17%) 0 0 13px;
     border-radius: .25rem;
 }
-.contenuBodyCardHelp{
-    color: blue;
+.positionCardHelp:hover{
+    border: 1px solid #fb2175;
+}
+.positionCardHelp > a:hover{
+    text-decoration: none !important;
 }
 .titreCardHelp{
     text-align: center;
