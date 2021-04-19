@@ -7,7 +7,7 @@
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0px 20px 0px 0px;
-    border-color: rgb(63, 204, 255);
+    border-color: #e04980;
     border-width: 2px;
 }
 #resourceCard {
@@ -29,7 +29,7 @@
 
 /*----------- HEADER ----------*/
 #resourceCard .lbl_publicationResourceCard {
-    background-image: url(/src/assets/img/BackgroundBlueHeadCard.png);
+    background-image: url(/src/assets/img/BackgroundHeadCard.png);
     background-repeat: no-repeat;
     width:100%;
 }
@@ -82,7 +82,7 @@
 }
 #resourceCard .titleResourceCard {
     padding: 0 20px;
-    color: white;
+    color: #707070;
 }
 #resourceCard .contentPictureResourceCard {
     padding: 0 20px 10px 20px;
@@ -96,7 +96,7 @@
 }
 #resourceCard .span_PseudonymeMembreResourceCard{
     margin-left: .9rem;
-    color:white;
+    color:#707070;
 }
 #resourceCard .span_ProfessionMembreResourceCard{
     position:absolute;
@@ -104,13 +104,17 @@
     font-size: .9rem;
     margin-top: 1.2rem;
     margin-left: 3.4rem;
-    color:white;
+    color:#707070;
+}
+.colorCardBadge{
+    color: white;
 }
 
 /*----------- FOOTER ----------*/
 .FooterResourceCard {
-    background: linear-gradient(270deg, #E04980 -45.56%, rgba(255, 255, 255, 0) 100%), #00B0F0;
-    height: 50px;
+    background: linear-gradient(
+90deg
+, rgb(224 73 128 / 84%) 62%, rgb(0 176 240 / 72%) 100%);    height: 50px;
 }
 #resourceCard .iconResourceCard{
     justify-content: space-evenly;

@@ -11,12 +11,12 @@
 .titleVisitorSitePresentation{
     font-family: Roboto;
     font-size: 6rem;
-    color:white;
+    color:#000;
 }
 .pVisitorSitePresentation{
     font-family: Roboto;
     text-align: justify;
-    color:white;
+    color:#000;
 }
 .row{
     margin-left: 1rem;
