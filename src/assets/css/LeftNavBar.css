@@ -86,7 +86,6 @@ nav>ul>li>label{
     transition: all 0.3s;
 }
 .custom-btn::before{
-    speak: none;
     -webkit-font-smoothing: antialiased;
 }
 .custom-btn::after{

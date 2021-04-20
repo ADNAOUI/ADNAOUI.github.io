@@ -6,10 +6,11 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import LeftNavBar from "../components/LeftNavBar/LeftNavBar.js";
 import Footer from "../components/Footer/Footer.js";
 import TopNavBar from "../components/TopNavBar/TopNavBar.js";
+import ResourceContainer from "../views/ResourceContainer.js";
 
 import routes from "../routes.js";
 import routesFooter from "../routesFooter.js";
-
+import routesRessource from "../routesRessource.js";
 
 export default class Layouts extends React.Component {
 
@@ -22,6 +23,8 @@ export default class Layouts extends React.Component {
            {...this.props}
           routes={routes}
         />
+
+        <ResourceContainer {...this.props} routesRessource={routesRessource}/>
 
         <div>
           <Switch>
@@ -42,6 +45,19 @@ export default class Layouts extends React.Component {
               return (
                 <Route
                   path={prop.layoutFooter + prop.pathFooter}
+                  component={prop.component}
+                  key={key}
+                />
+              );
+            })}
+            <Redirect from="/ressources_relationnelles" to="/ressources_relationnelles/accueil" />
+          </Switch>
+
+          <Switch>
+            {routesRessource.map((prop, key) => {
+              return (
+                <Route
+                  path={prop.layoutRessouce + prop.pathRessource}
                   component={prop.component}
                   key={key}
                 />
