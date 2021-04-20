@@ -70,23 +70,42 @@ function ButtonAddRessource(props){
                             </Form.Label>
                             <div class="sous-titre">CATEGORIES</div>
                             <div class="categorieAddResource">
-                            <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
-                                <CategorieAddResource text="Ami"/>
-                            </Form.Label>
+                                <Form.Label controlId="categories" class="categorieAddResource">
+                                    <CategorieAddResource text="Communication"/>
+                                    <CategorieAddResource text="Cultures"/>
+                                    <CategorieAddResource text="Développement personnel"/>
+                                    <CategorieAddResource text="Intelligence émotionnelle"/>
+                                    <CategorieAddResource text="Loisirs"/>
+                                    <CategorieAddResource text="Spiritualité"/>
+                                    <CategorieAddResource text="Monde professionnel"/>
+                                    <CategorieAddResource text="Parentalité"/>
+                                    <CategorieAddResource text="Qualité de vie"/>
+                                    <CategorieAddResource text="Recherche de sens"/>
+                                    <CategorieAddResource text="Santé physique"/>
+                                    <CategorieAddResource text="Santé psychique"/>
+                                </Form.Label>
                             </div>
                             <div class="sous-titre">TYPE DE RELATIONS</div>
                             <div class="typeRelationsAddResource">
                             <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
+                                <CategorieAddResource text="Soi"/>
+                                <CategorieAddResource text="Conjoints"/>
+                                <CategorieAddResource text="Famille (enfants / parents / fratrie"/>
+                                <CategorieAddResource text="Professionnelle (collègues / collaborateurs / managers"/>
                                 <CategorieAddResource text="Ami"/>
                             </Form.Label>
                             </div>
                             <div class="sous-titre">TYPE DE RESSOURCES</div>
                             <div class="typeRessourceAddResource">
                             <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
-                                <CategorieAddResource text="Ami"/>
+                                <CategorieAddResource text="Activité / Jeu à réaliser"/>
+                                <CategorieAddResource text="Carte défie"/>
+                                <CategorieAddResource text="Fiche de lecture"/>
+                                <CategorieAddResource text="Vidéo"/>
+                                <CategorieAddResource text="Cours au format pdf"/>
+                                <CategorieAddResource text="Exercice / Atelier"/>
+                                <CategorieAddResource text="Jeu en ligne"/>
+                                <CategorieAddResource text="Article"/>
                             </Form.Label>
                             </div>
                             <InputGroup>

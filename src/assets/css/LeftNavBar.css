@@ -87,7 +87,6 @@ nav>ul>li>label{
     transition: all 0.3s;
 }
 .custom-btn::before{
-    speak: none;
     -webkit-font-smoothing: antialiased;
 }
 .custom-btn::after{
@@ -97,6 +96,11 @@ nav>ul>li>label{
     transition: all 0.3s;
 }
 /*------------ MODALE ADD RESOURCE ------------ */
+.modal-content {
+    width: 300% !important;
+    margin: 10rem -45rem;
+}
+
 input[type=checkbox], input[type=radio]{
     display:none;
 }
@@ -112,6 +116,10 @@ input[type=checkbox], input[type=radio]{
 
 .categorieAddResource{
     display:flex;
+}
+
+.lineCategorieAddResource {
+    display:block;
 }
 
 .badge_AddResource {
