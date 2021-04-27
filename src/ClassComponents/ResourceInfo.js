@@ -10,8 +10,8 @@ class ResourceInfo extends Component {
         return (
             <div className="perimetreResourceInfo">
                 <h1>Le TitreDeLaRessource</h1>
-                <input type="button" value="Rubrique"/>
-				<input type="button" value="Informations"/>
+                <input className="buttonResourceInfo" type="button" value="Rubrique"/>
+				<input className="buttonResourceInfo" type="button" value="Informations"/>
                 <OverlayInfo />
             </div>
         );

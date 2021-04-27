@@ -1,5 +1,21 @@
 .perimetreResourceInfo {
+    color: white;
     width: 50rem;
     height: 35rem;
-    border: .3rem solid;
+    background-color: #e04980;
+    border-radius: 0 2rem 2rem 0rem;
+}
+
+.buttonResourceInfo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    width: 226px;
+    height: 63px;
+    left: 1313px;
+    top: 294px;
+    border-radius: 5rem;
 }

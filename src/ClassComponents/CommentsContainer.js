@@ -1,10 +1,16 @@
+//----- MODULES -----//
 import React, { Component } from 'react';
 
+//----- COMPOSANTS -----//
+import CommentsContent from './CommentsContent.js';
 class CommentsContainer extends Component {
     render() {
         return (
             <div>
-                Je suis le CommentsContainer
+                <h2 class="comments-title" id="comments">
+                    <span>Comments</span>
+                </h2>
+                <CommentsContent />
             </div>
         );
     }
