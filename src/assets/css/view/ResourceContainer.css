@@ -1,0 +1,11 @@
+.perimetreResourceContainer {
+    margin: 5rem 17rem;
+}
+.backButton {
+    margin: 1rem 0;
+}
+.ligne {
+    text-align: center;
+    display: flex;
+    float: left;
+}
