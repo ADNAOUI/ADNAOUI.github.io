@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //----- COMPOSANTS -----//
-import ResourceCard from '../ClassComponents/ResourceCard.js';
+//import ResourceCard from '../ClassComponents/ResourceCard.js';
 import ResourceContainer from '../views/ResourceContainer.js';
 
 //----- STYLES -----//

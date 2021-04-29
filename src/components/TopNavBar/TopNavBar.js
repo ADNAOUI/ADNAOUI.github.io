@@ -12,9 +12,9 @@ export default class TopNavBar extends Component {
     render()
     {
         return (
-            <div class="backgroundTopNavBar">
-                <img src={Logo} class="imgTopNavBar" alt="ressourcesRelationnelles" />
-                <div class="positionButtonConnexionInscription">
+            <div className="backgroundTopNavBar">
+                <img src={Logo} className="imgTopNavBar" alt="ressourcesRelationnelles" />
+                <div className="positionButtonConnexionInscription">
                     <ButtonInscription/>
                     <ButtonConnexion text="Se Connecter" />
                     <InterrogationPoint />
@@ -36,18 +36,18 @@ function ButtonInscription() {
 
     return (
         <div>
-            <button class="buttonInscription" onClick={handleShow}>S'inscrire</button>
+            <button className="buttonInscription" onClick={handleShow}>S'inscrire</button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title class={indexTabs === 1 ? 'activeContent' : 'content'}>S'inscrire a RE</Modal.Title>
-                    <Modal.Title class={indexTabs === 2 ? 'activeContent' : 'content'}>Se connecter a RE</Modal.Title>
-                    <div class="positionBoutonInscriptionConnexion" >
-                        <a class={indexTabs === 1 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(1) }>S'inscrire </a>
-                        <a class={indexTabs === 2 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(2) }>Se connecter </a>
+                    <Modal.Title className={indexTabs === 1 ? 'activeContent' : 'content'}>S'inscrire a RE</Modal.Title>
+                    <Modal.Title className={indexTabs === 2 ? 'activeContent' : 'content'}>Se connecter a RE</Modal.Title>
+                    <div className="positionBoutonInscriptionConnexion" >
+                        <a className={indexTabs === 1 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(1) }>S'inscrire </a>
+                        <a className={indexTabs === 2 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(2) }>Se connecter </a>
                     </div>
                 </Modal.Header>
 
-                <Modal.Body className={indexTabs === 1 ? 'activeContent' : 'content'}>
+                <Modal.Body classNameName={indexTabs === 1 ? 'activeContent' : 'content'}>
                     <Form>
                         <Form.Group controlId="formInscriptionPseudo">
                             <Form.Label>
@@ -98,7 +98,7 @@ function ButtonInscription() {
                     </Form>
                 </Modal.Body>
 
-                <Modal.Body className={indexTabs === 2 ? 'activeContent' : 'content'}>
+                <Modal.Body classNameName={indexTabs === 2 ? 'activeContent' : 'content'}>
                     <Form>
                         <Form.Group  controlId="formConnexionID">
                             <Form.Label >
@@ -115,11 +115,11 @@ function ButtonInscription() {
                         </Form.Group>
                     </Form>
                 </Modal.Body>
-                <Modal.Footer class={indexTabs === 1 ? 'activeContent' : 'content'}>
-                    <div class="btnModal " onClick={handleClose}>S'inscrire</div>
+                <Modal.Footer className={indexTabs === 1 ? 'activeContent' : 'content'}>
+                    <div className="btnModal " onClick={handleClose}>S'inscrire</div>
                 </Modal.Footer>
-                <Modal.Footer class={indexTabs === 2 ? 'activeContent' : 'content'}>
-                    <div class="btnModal" onClick={handleClose}>Se Connecter</div>
+                <Modal.Footer className={indexTabs === 2 ? 'activeContent' : 'content'}>
+                    <div className="btnModal" onClick={handleClose}>Se Connecter</div>
                 </Modal.Footer>
             </Modal>
         </div>
@@ -128,12 +128,12 @@ function ButtonInscription() {
 
 function ButtonConnexion(props) {
     return (
-        <button class="leftNavBar-bouton buttonConnexion">{props.text}</button>
+        <button className="leftNavBar-bouton buttonConnexion">{props.text}</button>
     )
 }
 
 function InterrogationPoint(props) {
     return (
-        <FaQuestion class="interrogationPointTopBar" />
+        <FaQuestion className="interrogationPointTopBar" />
     )
 }

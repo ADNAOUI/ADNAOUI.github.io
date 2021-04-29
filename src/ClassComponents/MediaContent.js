@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 //----- STYLES -----//
-import MediaContentCss from '../assets/css/MediaContent.css';
+import '../assets/css/MediaContent.css';
 
 class MediaContent extends Component {
     render() {

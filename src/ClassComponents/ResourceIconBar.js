@@ -12,13 +12,13 @@ import IconShare from '../assets/img/icons/bi_share.png'
 class ResourceIconBar extends Component {
     render() {
         return (
-            <div className="perimetreResourceIconBar">
-                <div class="icon-bar">
-                    <a class="activeClass" href="#"><i class="fa fa-home"><img src={IconAwesomeEyes}/></i></a> 
-                    <a href="#"><i class="fa fa-search"><img src={IconBiHeart}/></i></a> 
-                    <a href="#"><i class="fa fa-envelope"><img src={IconStar}/></i></a> 
-                    <a href="#"><i class="fa fa-globe"><img src={IconComments}/></i></a>
-                    <a href="#"><i class="fa fa-trash"><img src={IconShare}/></i></a> 
+            <div classNameNameName="perimetreResourceIconBar">
+                <div className="icon-bar">
+                    <a href="/"><i className="fa fa-home"><img src={IconAwesomeEyes} alt=""/></i></a> 
+                    <a href="/"><i className="fa fa-search"><img src={IconBiHeart} alt=""/></i></a> 
+                    <a href="/"><i className="fa fa-envelope"><img src={IconStar} alt=""/></i></a> 
+                    <a href="/" className="activeClass"><i className="fa fa-globe"><img src={IconComments} alt=""/></i></a>
+                    <a href="/"><i className="fa fa-trash"><img src={IconShare} alt=""/></i></a> 
                 </div>
             </div>
         );

@@ -3,10 +3,14 @@ import React, { Component } from 'react';
 
 //----- COMPOSANTS -----//
 import CommentsContent from './CommentsContent.js';
+
+//----- STYLES -----//
+import '../assets/css/CommentsContainer.css';
+
 class CommentsContainer extends Component {
     render() {
         return (
-            <div>
+            <div className="perimetreCommentsContainer">
                 <h2 class="comments-title" id="comments">
                     <span>Comments</span>
                 </h2>
@@ -15,5 +19,4 @@ class CommentsContainer extends Component {
         );
     }
 }
-
 export default CommentsContainer;

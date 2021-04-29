@@ -7,7 +7,6 @@ import ResourceInfo from '../ClassComponents/ResourceInfo.js'
 import ResourceIconBar from '../ClassComponents/ResourceIconBar.js'
 import ShareModal from '../ClassComponents/ShareModal.js'
 import CommentsContainer from '../ClassComponents/CommentsContainer.js'
-import CommentsContent from '../ClassComponents/CommentsContent.js'
 
 //----- STYLES -----//
 import '../assets/css/view/ResourceContainer.css'
@@ -31,9 +30,13 @@ class ResourceContainer extends Component {
         </div>
         <div className="ligne">
           <ResourceIconBar />
-          <ShareModal />
+
+        </div>
+        <div className="ligne">
           <CommentsContainer />
-          <CommentsContent />
+        </div>
+        <div>
+        <ShareModal />
         </div>
 
 

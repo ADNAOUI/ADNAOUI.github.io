@@ -1,11 +1,15 @@
-import React, { Component } from 'react';
+//----- MODULES -----//
+import React, { Component } from 'react'
+
+//----- STYLES -----//
+import '../assets/css/CommentsContent.css'
 
 class CommentsContent extends Component {
     render() {
         return (
-            <div>
+            <div className="perimetreCommentsContent">
                 <ol className="commentlist" id="commentlist">
-                    <li classNameName="comment even thread-even depth-1" id="li-comment-1765770">
+                    <li className="comment even thread-even depth-1" id="li-comment-1765770">
                         <div className="comment-wrap" id="comment-1765770">
                             <div className="comment-author-wrap">
                                 <div className="comment-author">Eelke</div>
@@ -17,9 +21,9 @@ class CommentsContent extends Component {
                                 </p>
                             </div>
                             <div className="comment-actions">
-                            <div className="reply">
-                                <a rel="nofollow" className="comment-reply-link" href="#comment-1765770" data-commentid="1765770" data-postid="326366" data-belowelement="comment-1765770" data-respondelement="respond" data-replyto="Reply to Eelke" aria-label="Reply to Eelke">Reply</a> 
-                            </div>
+                                <div className="reply">
+                                    <a rel="nofollow" className="comment-reply-link" href="#comment-1765770" data-commentid="1765770" data-postid="326366" data-belowelement="comment-1765770" data-respondelement="respond" data-replyto="Reply to Eelke" aria-label="Reply to Eelke">Reply</a> 
+                                </div>
                             </div>
                         </div>
                         <ul className="children">
@@ -119,9 +123,52 @@ class CommentsContent extends Component {
                         </ul>
                     </li>
                 </ol>
+                <div className="respond">
+                    <div className="comment-form-form-area">
+                        <h3 id="reply-title" className="comment-reply-title">Leave a Reply <small><a id="cancel-comment-reply-link" href="/styling-comment-threads/#respond">Cancel reply</a></small></h3>
+                        <form action="https://css-tricks.com/wp-comments-post.php" method="post" id="commentform" className="comment-form">
+                            <p className="comment-notes">
+                                <span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span>
+                            </p>
+                            <p className="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span className="required">*</span>
+                                <div id="markdown_comment" className="comment-content markdown-comment-preview"></div>
+                                <div className="preview-buttons" id="preview-buttons">
+                                    <a href="#0" id="writeCommentButton" className="commentPreviewButton active">Write</a>
+                                    <a href="#0" id="previewCommentButton" className="commentPreviewButton">Preview</a>
+                                </div>
+                            </p>
+                            <p className="comment-form-author">
+                                <label for="author">Name <span className="required">*</span></label>
+                                <input id="author" name="author" type="text" value="" size="30" maxlength="245" required="required"></input>
+                            </p>
+                            <p class="comment-form-email">
+                                <label for="email">Email <span className="required">*</span></label>
+                                <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required"/>
+                            </p>
+                            <p className="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200"/></p>
+                            <p className="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"/> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+                            <input type="hidden" name="_mc4wp_subscribe_wp-comment-form" value="0"/>
+                            <p className="mc4wp-checkbox mc4wp-checkbox-wp-comment-form"><label><input type="checkbox" name="_mc4wp_subscribe_wp-comment-form" value="1" checked="checked"/><span>Get the CSS-Tricks newsletter</span></label></p>
+                            <p className="form-submit"><input name="submit" type="submit" id="submit" className="submit" value="Post Comment"/> <input type="hidden" name="comment_post_ID" value="326366" id="comment_post_ID"/>
+                                <input type="hidden" name="comment_parent" id="comment_parent" value="0"/>
+                            </p>
+                            <p><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9f406328fe"/></p>
+                            <p className="antispam-group antispam-group-q">
+                                <label>Copy and paste this code: <strong className="antspmpro-input-a">micuno</strong> <span className="required">*</span></label>
+                                <input type="hidden" name="antspmpro-a" className="antispam-control antispam-control-a" value="micuno"/>
+                                <input type="text" name="antspmpro-q-luwele" class="antispam-control antispam-control-q" value="4.1"/>
+                            </p>
+                            <p class="antispam-group antispam-group-e">
+                                <label>Leave this field empty</label>
+                                <input type="text" name="antspmpro-e-email-url-website-luwele" className="antispam-control antispam-control-e" value=""/>
+                            </p>
+                            <textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea>
+                            <input type="hidden" id="ak_js" name="ak_js" value="1619546253883"></input>
+                        </form>
+                    </div>
+                </div>
             </div>
         );
     }
 }
-
-export default CommentsContent;
+export default CommentsContent
