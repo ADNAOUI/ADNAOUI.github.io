@@ -2,7 +2,8 @@
     color: white;
     width: 50rem;
     height: 35rem;
-    background-color: #e04980;
+    background-color: #555;
+    border: .3rem solid #e04980;
     border-radius: 0 2rem 2rem 0rem;
 }
 

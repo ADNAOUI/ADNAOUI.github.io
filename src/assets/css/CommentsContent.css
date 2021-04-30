@@ -60,8 +60,9 @@ menu, ol, ul {
 }
 .CommentForm .comment-content, .commentlist .comment-content, .comment ul .comment-content {
     overflow: hidden;
+    text-align: justify;
     background: #eaeaea;
-    color: #434343;
+    color: #000000;
     padding: 1rem;
     border-radius: 8px;
     z-index: 1;
@@ -104,8 +105,10 @@ menu, ol, ul {
     font-size: .75rem;
 }
 .comment-respond, .respond {
+    text-align: left;
+    color:white;
     padding: 2rem;
-    background: #111;
+    background: #555;
     border-radius: 8px;
 }
 .comment-form, .comment-form-form-area {
@@ -113,6 +116,7 @@ menu, ol, ul {
     margin: 0 auto;
 }
 .comment-reply-title {
+    display: none;
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -187,4 +191,100 @@ textarea {
     padding: .35rem 1rem;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+}
+.akismet_comment_nonce {
+    display:none;
+}
+.antispam-group-q {
+    clear: both;
+    display: none;
+}
+.antispam-group-e {
+    display: none;
+}
+.ak_hp_textarea {
+    display: none !important;
+}
+#commentform p {
+    margin-bottom: .5rem;
+}
+#commentform label {
+    display: block;
+}
+fieldset, input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    font-family: Operator Mono SSm A,Operator Mono SSm B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+    background: #eaeaea;
+    border: 1px solid #d4d4d4!important;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
+}
+button, input {
+    line-height: normal;
+}
+.comment-form-cookies-consent, .comment-subscription-form, .mc4wp-checkbox {
+    color: #777;
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    line-height: 1.3;
+    font-size: .8rem;
+}
+.comment-form-cookies-consent {
+    margin-top: 1rem;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+.mc4wp-checkbox label {
+    display: flex;
+    align-items: center;
+}
+.comment-form-cookies-consent input[type=checkbox], .comment-subscription-form input[type=checkbox], .mc4wp-checkbox input[type=checkbox] {
+    margin-right: .5rem;
+    position: relative;
+    top: -2px;
+}
+input[type=checkbox], input[type=radio] {
+    padding: 0;
+}
+.form-submit {
+    grid-column: 1/-1;
+    text-align: right;
+}
+.add_to_cart_button, .button, .jetpack-instant-search__scroll-button, .woocommerce-cart.woocommerce-cart .wc-proceed-to-checkout a.checkout-button, .woocommerce.woocommerce button.button, .wp-block-button__link, input.submit {
+    background-color: #5e5e5e!important;
+    color: #fff!important;
+    border: 0;
+    border-bottom: 1px solid #262626;
+    border-right: 1px solid #262626;
+    box-shadow: inset 1px 1px 0 #777, 0 2px 3px rgb(0 0 0 / 40%);
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 700;
+    border-radius: 4px!important;
+    white-space: nowrap;
+    padding: 1rem 1.5rem;
+    line-height: 1.4;
+    text-align: center;
+    transition: .07s;
+    position: relative;
+    text-decoration: none!important;
+}
+.form-submit {
+    grid-column: 1/-1;
+    text-align: right;
+}
+fieldset, input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], textarea {
+    font-family: Roboto;
+    background: #eaeaea;
+    border: 1px solid #d4d4d4!important;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 0;
+    width: 100%;
 }
