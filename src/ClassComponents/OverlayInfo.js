@@ -20,6 +20,8 @@ class OverlayInfo extends Component {
                     </div>
                 </div>
 
+                <hr className="hr_OverlayInfo"/>
+
                 <div className="overlayInfo Informations">
                     <div>
                         <label>Auteur :</label>

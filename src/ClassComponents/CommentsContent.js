@@ -22,7 +22,7 @@ class CommentsContent extends Component {
                             </div>
                             <div className="comment-actions">
                                 <div className="reply">
-                                    <a rel="nofollow" className="comment-reply-link" href="#comment-1765770" data-commentid="1765770" data-postid="326366" data-belowelement="comment-1765770" data-respondelement="respond" data-replyto="Reply to Eelke" aria-label="Reply to Eelke">Reply</a> 
+                                    <a rel="nofollow" className="comment-reply-link" href="#comment-1765770" data-commentid="1765770" data-postid="326366" data-belowelement="comment-1765770" data-respondelement="respond" data-replyto="Reply to Eelke" aria-label="Reply to Eelke">Réponse</a> 
                                 </div>
                             </div>
                         </div>
@@ -163,7 +163,7 @@ class CommentsContent extends Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 export default CommentsContent

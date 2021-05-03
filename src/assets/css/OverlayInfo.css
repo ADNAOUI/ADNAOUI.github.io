@@ -6,6 +6,10 @@
     width: 49.5rem;
     height: 28rem;
 }
+.hr_OverlayInfo {
+    background-color: white;
+}
+
 /* .overlayInfo {
     border: .3rem solid red;
 } */

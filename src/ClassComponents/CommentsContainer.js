@@ -12,11 +12,11 @@ class CommentsContainer extends Component {
         return (
             <div className="perimetreCommentsContainer">
                 <h2 class="comments-title" id="comments">
-                    <span>Comments</span>
+                    <span>Commentaires</span>
                 </h2>
                 <CommentsContent />
             </div>
-        );
+        )
     }
 }
 export default CommentsContainer;

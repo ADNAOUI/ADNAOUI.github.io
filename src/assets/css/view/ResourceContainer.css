@@ -1,4 +1,5 @@
 .perimetreResourceContainer {
+    display: block;
     margin: 0;
 }
 .backButton {
