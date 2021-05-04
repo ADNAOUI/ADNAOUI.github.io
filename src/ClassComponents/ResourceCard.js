@@ -1,42 +1,48 @@
-import React, {Component} from 'react';
-import { Card } from 'react-bootstrap';
-import resourcesImg from '../assets/img/resourcesImg.png';
-import resourceCardAvatar from '../assets/img/resourceCardAvatar.png';
-import heartIcon from '../assets/img/heartIcon.png';
-import commentIcon from '../assets/img/commentIcon.png';
-import shareIcon from '../assets/img/shareIcon.png';
-import starIcon from '../assets/img/starIcon.png';
+//----- MODULES -----//
+import React, { Component } from 'react';
+import { Card }             from 'react-bootstrap';
+import Axios                from 'axios';
+
+//----- MULTIMEDIAS -----//
+import resourcesImg         from '../assets/img/resourcesImg.png';
+import resourceCardAvatar   from '../assets/img/resourceCardAvatar.png';
+import heartIcon            from '../assets/img/heartIcon.png';
+import commentIcon          from '../assets/img/commentIcon.png';
+import shareIcon            from '../assets/img/shareIcon.png';
+import starIcon             from '../assets/img/starIcon.png';
+
+//----- STYLES -----//
 import '../assets/css/view/ResourceCard.css';
 
-export default class ResourceCard extends Component{
+class ResourceCard extends Component{
     constructor(props){
         super(props);
         this.state = {
-            //ressources: []resourcesImg
-            identifiantRessource         : '',
-            identifiantCategorieRessource: ["Communication", "Soi", "Article"],
-            titreRessource               : 'Titre de la Ressource sur une ou deux lignes si titre long',
-            imageRessource               : '',
-            contenuRessource             : '',
-            nombreLikeRessource          : 0,
-            partageRessource             : '',
-            nombrePartageRessource       : 0,
-            nombreCommentaireRessource   : 0,
-            etatRessource                : [],
-            datePrePublicationRessource  : new Date(),
-            datePublicationRessource     : new Date(),
-            pseudonymeMembreResourceCard : 'John Doe',
-            professionMembreResourceCard : 'Développeur informatique',
-            visible                      : true
+            //----- STATES BdD -----//
+            ressources                  : Array.from({ length: 10 }),
+
+            //----- STATES LOCALES -----//
+            nombreCommentaireRessource  : 0,
+            nombrePartageRessource      : 0,
+            nombreLikeRessource         : 0,
+            pseudonymeMembreResourceCard: 'John Doe',
+            professionMembreResourceCard: 'Développeur informatique',
+            visible                     : true,
         };
     }
 
     componentDidMount(){
-        /* axios.get("http://localhost:8055/items/ressources")
-        .then(res => {
-            const ressources = res.data;
+        Axios ({
+            method: 'get',
+            url: 'http://localhost:8055/items/ressources',
+            responseType: 'json',
+            params : {
+                limit: 999999999
+            }
+        }).then(response => {
+            const ressources = response.data.data
             this.setState({ressources});
-        })*/
+        });
     }
 
     componentWillUnmount(){
@@ -45,35 +51,35 @@ export default class ResourceCard extends Component{
 
     render(){
         return(
-            <div id="resourceCard" class="resourceCard">
-                <div id="lbl_publicationResourceCard" class="col-12 lbl_publicationResourceCard">
-                    <span id="span_publicationResourceCard" class="span_publicationResourceCard">publié le : <strong>{this.state.datePublicationRessource.toLocaleDateString()}</strong></span>
+            <div id="resourceCard" className="resourceCard">
+                <div id="lbl_publicationResourceCard" className="col-12 lbl_publicationResourceCard">
+                    <span id="span_publicationResourceCard" className="span_publicationResourceCard">publié le : <strong>15/05/2020</strong></span>
                 </div>
 
-                <div class="cardRessource">
+                <div className="cardRessource">
                 <hr/>
-                <div class="cardBody">
+                <div className="cardBody">
                     <Card.Body style={{padding: 10, backgroundColor: "#F7F7F7", borderTopRightRadius: 18}}>
-                        <div class="row titleResourceCard">
-                            <Card.Title><strong class="tailleTitreCardRessources">{this.state.titreRessource}</strong></Card.Title>
+                        <div className="row titleResourceCard">
+                            <Card.Title><strong className="tailleTitreCardRessources">{this.state.titreRessource}</strong></Card.Title>
                         </div>
-                        <div class="row contentPictureResourceCard">
+                        <div className="row contentPictureResourceCard">
                             <Card.Img style={{alignItems: 'center'}} src={resourcesImg}/>
                         </div>
-                        <div class="colorCardBadge">
-                            <span class="badgeRessourceCard" variant="primary">{this.state.identifiantCategorieRessource[0]}</span>
-                            <span class="badgeRessourceCard" variant="secondary">{this.state.identifiantCategorieRessource[1]}</span>
-                            <span class="badgeRessourceCard" variant="secondary">{this.state.identifiantCategorieRessource[2]}</span>
+                        <div className="colorCardBadge">
+                            <span className="badgeRessourceCard" variant="primary">1</span>
+                            <span className="badgeRessourceCard" variant="secondary">2</span>
+                            <span className="badgeRessourceCard" variant="secondary">3</span>
                         </div>
-                        <div class="row ProfilPictureResourceCard">
+                        <div className="row ProfilPictureResourceCard">
                             <Card.Img style={{width: '40px'}} src={resourceCardAvatar}/>
-                            <span class="span_PseudonymeMembreResourceCard"><strong>{this.state.pseudonymeMembreResourceCard}</strong></span>
-                            <span class="span_ProfessionMembreResourceCard">{this.state.professionMembreResourceCard}</span>
+                            <span className="span_PseudonymeMembreResourceCard"><strong>{this.state.pseudonymeMembreResourceCard}</strong></span>
+                            <span className="span_ProfessionMembreResourceCard">{this.state.professionMembreResourceCard}</span>
                         </div>
                     </Card.Body>
                 </div>
-                    <Card.Footer class="FooterResourceCard">
-                        <div class="row iconResourceCard">
+                    <Card.Footer className="FooterResourceCard">
+                        <div className="row iconResourceCard">
                             <span><IconStatResourceCard name={heartIcon} number={this.state.nombreLikeRessource}/></span>
                             <span><IconStatResourceCard name={commentIcon} number={this.state.nombreCommentaireRessource}/></span>
                             <span><IconStatResourceCard name={shareIcon} number={this.state.nombrePartageRessource}/></span>
@@ -90,7 +96,9 @@ function IconStatResourceCard(props){
     return(
         <div>
         <Card.Img src={props.name}/>
-        <span class="span_numberIconResourceCard">{props.number}</span>
+        <span className="span_numberIconResourceCard">{props.number}</span>
         </div>
     )
 }
+
+export default ResourceCard;

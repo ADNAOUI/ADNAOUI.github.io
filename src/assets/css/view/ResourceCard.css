@@ -1,3 +1,9 @@
+#resourceCard {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    cursor: pointer;
+}
 .cardRessource{
     position: relative;
     display: flex;
@@ -9,11 +15,7 @@
     border-radius: 0px 20px 0px 0px;
     border-color: #e04980;
     border-width: 2px;
-}
-#resourceCard {
-    display: inline-block;
-    width: 280px;
-    margin: 20px;
+
 }
 
 #resourceCard hr{
