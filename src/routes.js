@@ -40,7 +40,7 @@ const dashRoutes = [
   },
   {
     path: "/monCompte",
-    name: "MonCompte",
+    name: "Mon compte",
     icon:<MdAccountCircle/>,
     component: MonCompte,
     layout: "/ressources_relationnelles",

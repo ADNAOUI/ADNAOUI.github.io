@@ -1,0 +1,49 @@
+.AboutAccountPreview{     
+       
+    background-color:#FFF7FA; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1%;
+}
+.accountnavbar ul{
+    padding:0;
+    margin-left:15px;
+    list-style-type:none;
+}
+.accountnavbar li{
+    float:left; /*pour IE*/
+    padding : 1%;
+    margin-left: auto;
+    
+}
+.accountnavbar a{
+    display:block;
+    float:left;   
+    width:150px; 
+    color : black ;  
+    font-size: 36px;
+    text-decoration:none;
+    text-align:center;
+}
+.accountnavbar a:hover{
+    display:block;
+    float:left;   
+    width:max-content; 
+    color : rgb(110, 105, 105) ;  
+    font-size: 36px;
+    text-decoration:none;
+    text-align:center;
+}
+h1{
+    text-align: center;
+}
+
+.galleriePreview{       
+    margin: 1% ;
+    
+}
+.ImagesAccountPreview{
+    margin-left:2%;
+    
+    text-align:center;
+}
