@@ -1,5 +1,5 @@
 import React, {useState, Component} from 'react';
-import {Form, Modal, InputGroup, FormControl} from 'react-bootstrap';
+import {Button, Form, Modal, InputGroup, FormControl} from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 import '../../assets/css/LeftNavBar.css';
@@ -8,6 +8,9 @@ export default class LeftNavBar extends Component{
     constructor(props) {
         super(props);
         this.activeRoute.bind(this);
+        this.state = {
+            ressources : []
+        }
       }
       // On vérifie si le route existe ou non
       activeRoute(routeName) {
@@ -54,6 +57,15 @@ function ButtonAddRessource(props){
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const type = '';
+
+    const categorieValue = '';
+
+    //Fonction POST
+    // const handleClickCategorie = (props) => {
+    //     categorieValue = props.Test.value;
+    //     console.log(categorieValue);
+    // }
 
     return(
         <div>
@@ -70,23 +82,34 @@ function ButtonAddRessource(props){
                             </Form.Label>
                             <div class="sous-titre">CATEGORIES</div>
                             <div class="categorieAddResource">
+
+                            <Form>
+                                <Form.Group>
+                                    <Button inline id="Test1" value="Communication">Coucou</Button>
+                                    <Button inline id="Test1" value="Communication">Coucou</Button>
+                                    <Button inline id="Test1" value="Communication">Coucou</Button>
+                                    <Button inline id="Test1" value="Communication">Coucou</Button>
+                                    <Button inline id="Test1" value="Communication">Coucou</Button>
+                                </Form.Group>
+                            </Form>
+
                             <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
-                                <CategorieAddResource text="Ami"/>
+                                {/* <CategorieAddResource text="Communication"/>
+                                <CategorieAddResource text="Ami"/> */}
                             </Form.Label>
                             </div>
                             <div class="sous-titre">TYPE DE RELATIONS</div>
                             <div class="typeRelationsAddResource">
                             <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
-                                <CategorieAddResource text="Ami"/>
+                                {/* <CategorieAddResource text="Communication"/>
+                                <CategorieAddResource text="Ami"/> */}
                             </Form.Label>
                             </div>
                             <div class="sous-titre">TYPE DE RESSOURCES</div>
                             <div class="typeRessourceAddResource">
                             <Form.Label controlId="categories" class="categorieAddResource">
-                                <CategorieAddResource text="Communication"/>
-                                <CategorieAddResource text="Ami"/>
+                                {/* <CategorieAddResource text="Communication"/>
+                                <CategorieAddResource text="Ami"/> */}
                             </Form.Label>
                             </div>
                             <InputGroup>

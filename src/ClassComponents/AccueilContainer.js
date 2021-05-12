@@ -26,12 +26,13 @@ class AccueilContainer extends Component {
        *  @property {int}     prevY        Numéro de la précédente page
        **/
       //----- STATES BdD
-        ressources: [],
+      ressources: [],
+      membres   : [],
 
       //----- STATES LOCALES
-      loading: false,
-      page   : 1,
-      prevY  : 0
+      loading   : false,
+      page      : 1,
+      prevY     : 0
     }
   }
 
@@ -41,7 +42,6 @@ class AccueilContainer extends Component {
    *  @param {Int} page contient le numéro de la page actuelle de l'API.
    **/
   getRessources = (page) => {
-    console.log("page", page)
     this.setState({ loading: true }); //....................................................Démarrage du chargement des données de l'API
     Axios({
       method:       'get',
@@ -66,7 +66,6 @@ class AccueilContainer extends Component {
       const curPage = this.state.page + 1;
       this.getRessources(curPage);
       this.setState({ page: curPage });
-      console.log("CurPage", curPage)
     }
     this.setState({ prevY: y });
   }
@@ -86,6 +85,13 @@ class AccueilContainer extends Component {
                                                                                      (param : Le nom de la fonction de rappel d'observateur, les options supplémentaires,
                                                                                      telles que la racine et le seuil)*/
     this.observer.observe(this.loadingRef);
+    Axios({
+        method: 'get',
+        url: 'http://localhost:8055/items/membres',
+        responseType: 'json',
+    }).then(response => {
+        this.setState({ membres: [...this.state.membres, ...response.data.data] });
+    });
   }
 
   render(){
@@ -95,7 +101,7 @@ class AccueilContainer extends Component {
     /**
      *  @const loadingTextCSS Affiche le message du chargement en fonction de l'état.
      **/
-    const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
+    const loadingTextCSS = { display: this.state.loading ? "block" : "none" }; 
     return(
       <div>
         <BrowserRouter>
@@ -103,7 +109,7 @@ class AccueilContainer extends Component {
             {/*AFFICHER toutes les ressources cards de la BdD*/}
             <ul>
               {this.state.ressources.map((ressource, indexRessource) =>
-                <Link to="/ressources_relationnelles/resourcecontainer"><ResourceCard key={indexRessource} tableRessources={ressource}/></Link>
+                <Link to="/ressources_relationnelles/resourcecontainer"><ResourceCard key={indexRessource} tableRessources={ressource} tableMembres={this.state.membres} /></Link>
               )}
             </ul>
           </div>
