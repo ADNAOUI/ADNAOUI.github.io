@@ -6,6 +6,7 @@ import Conduite from './views/Conduite.js';
 import Conditions from './views/Conditions.js';
 import PoliticalCookies from './views/PolitiqueCookies.js';
 import Help from './views/Help.js';
+import ResourceContainer from './views/ResourceContainer.js';
 
 const footerRoutes = [
   {
@@ -18,6 +19,12 @@ const footerRoutes = [
     pathFooter: "/faq",
     nameFooter: "FAQ",
     component: Faq,
+    layoutFooter: "/ressources_relationnelles",
+  },
+  {
+    pathFooter: "/resourcecontainer",
+    nameFooter: "ResourceContainer",
+    component: ResourceContainer,
     layoutFooter: "/ressources_relationnelles",
   },
   {

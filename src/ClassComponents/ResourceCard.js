@@ -80,7 +80,7 @@ class ResourceCard extends Component {
                             <div className="row contentPictureResourceCard">
                                 <Card.Img
                                     style={{alignItems: 'center'}}
-                                    src='https://i.picsum.photos/id/634/500/300' alt=""/>
+                                    src={this.state.imagesRessources.map(imagesRessource => imagesRessource.download_url)} alt=""/>
                             </div>
                             <div className="colorCardBadge">
                                 <span className="badgeRessourceCard" variant="primary">{this.props.tableRessources.DESIGNATION_CATEGORIE_RESSOURCE}</span>

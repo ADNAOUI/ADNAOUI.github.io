@@ -104,7 +104,6 @@ class AccueilContainer extends Component {
     const loadingTextCSS = { display: this.state.loading ? "block" : "none" }; 
     return(
       <div>
-        <BrowserRouter>
           <div className="div_ResourceContainer">
             {/*AFFICHER toutes les ressources cards de la BdD*/}
             <ul>
@@ -118,11 +117,6 @@ class AccueilContainer extends Component {
                ref={loadingRef => (this.loadingRef = loadingRef)}>
             <span style={loadingTextCSS}>Chargement...</span>
           </div>
-
-          <div className="div_ResourceContent">
-            <Route path="/ressources_relationnelles/resourcecontainer" component={ResourceContainer} />
-          </div>
-        </BrowserRouter>
       </div>
     )
   }
