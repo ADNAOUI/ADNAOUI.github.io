@@ -1,24 +1,26 @@
+#resourceCard {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    cursor: pointer;
+
+}
 .cardRessource{
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: 0px 20px 0px 0px;
     border-color: #e04980;
     border-width: 2px;
-}
-#resourceCard {
-    display: inline-block;
-    width: 280px;
-    margin: 20px;
+
 }
 
 #resourceCard hr{
     position: absolute;
-    margin-top: 16.7rem;
+    margin-top: 19rem;
     width: 100%;
     height: .05rem;
     background-color:#3FCCFF;
@@ -84,7 +86,11 @@
     padding: 0 20px;
     color: #707070;
 }
-#resourceCard .contentPictureResourceCard {
+#resourceCard .contentPictureResourceCard>img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 290px;
+    max-height: 200px;
     padding: 0 20px 10px 20px;
 }
 #resourceCard .ProfilPictureResourceCard{
@@ -108,6 +114,7 @@
 }
 .colorCardBadge{
     color: white;
+    height: 50px;
 }
 
 /*----------- FOOTER ----------*/
@@ -125,7 +132,7 @@
     color:white;
     font-weight: bold;
     width: 1.5rem;
-    margin-top: .1rem;
+    margin-top: -.7rem;
 }
 #resourceCard .iconResourceCard > span .span_numberIconResourceCard {
     margin-left: .3rem;

@@ -1,6 +1,15 @@
-.container-fluid{
-    width:100%;
-    height:56.9rem;
-    padding:10px;
-    background-color: #353535;
+.div_ResourceContainer {
+    margin: 4rem 0rem 0rem 16.4rem;
+    /* border: solid black .1rem; */
 }
+.ul_ResourceContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+/*--- LOADING */
+.loading {
+    height: 100px;
+    margin: 30px;
+  }

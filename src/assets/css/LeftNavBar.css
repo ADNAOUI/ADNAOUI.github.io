@@ -97,9 +97,6 @@ nav>ul>li>label{
     transition: all 0.3s;
 }
 /*------------ MODALE ADD RESOURCE ------------ */
-input[type=checkbox], input[type=radio]{
-    display:none;
-}
 .form-check{
     cursor: pointer;
     padding:0 1.1rem;
@@ -109,6 +106,16 @@ input[type=checkbox], input[type=radio]{
 }
 
 /*------------ CATEGORIE ADD RESOURCE ----------- */
+.categorieContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categorieContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
 
 .categorieAddResource{
     display:flex;
@@ -123,6 +130,14 @@ input[type=checkbox], input[type=radio]{
 .cb_AddResource {
     cursor: pointer;
 }
+.colorCardBadge2 label:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #E04980;
+}
+input[type=radio]{
+    opacity: 1;
+}
 
 /*----------- BOUTTON ADD RESOURCE ------------*/
 
@@ -132,4 +147,105 @@ input[type=checkbox], input[type=radio]{
     width: 5rem;
     border-radius: 20px;
     background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
+}
+
+/*---------- BADGES ----------*/
+.colorCardBadge2{
+    color: white;
+    height: 30px;
+}
+.badgeRessourceCard1{
+    border-radius: 15px;
+    background-color: #e04980;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(224, 73, 128);
+    border-width: 2px;
+}
+.badgeRessourceCard2{
+    border-radius: 15px;
+    background-color: #3fccff;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(63, 204, 255);
+    border-width: 2px;
+}
+.badgeRessourceCard3{
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+
+.colorCardBadge3 label:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #00b0f0;
+}
+.badgeRessourceCard31{
+    width: 13.9rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+.badgeRessourceCard32{
+    width: 10rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+.badgeRessourceCard3A{
+    background-color: #00B0F0;
+}
+.badgeRessourceCard4{
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
+}
+.badgeRessourceCard41{
+    width: 13.9rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
+}
+.badgeRessourceCard42{
+    width: 10rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
 }
