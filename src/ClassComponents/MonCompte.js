@@ -1,15 +1,15 @@
 //*--- MODULES
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 //*--- STYLES
-import '../assets/css/view/MonCompte.css';
+import '../assets/css/MonCompte.css';
 
 class MonCompte extends Component {
   render(){
     return(
-      <div className="perimetreMonCompte">
+      <Fragment>
         <div className="Rw6FN IcyS1" style={{backgroundImage: 'url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d227bedd-ad80-4263-ab73-ad2712643afb/deeorvx-1f9bb7c8-1429-4adc-8377-90dbf0091536.png/v1/crop/w_1920,h_520,x_0,y_521,scl_1,q_85,strp/device_computer_by_kenjimaru36_deeorvx-fullview-cover.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2QyMjdiZWRkLWFkODAtNDI2My1hYjczLWFkMjcxMjY0M2FmYlwvZGVlb3J2eC0xZjliYjdjOC0xNDI5LTRhZGMtODM3Ny05MGRiZjAwOTE1MzYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Xb9-kqzDTgdsET-5H2Jqc823l3TbFf5MGLETkkSAkhY")'}} />
-        	<div className="_2mK2v">
+        <div className="_2mK2v">
 					<div id="content-container" className="_2u8eq">
 						<div className="_2EDy-" />
 						<div className="_2eTWG">
@@ -169,7 +169,8 @@ class MonCompte extends Component {
 									<div className="_1nTU4">
 										<div className="_1VOOR">
 											<div>
-											<div className="_3ry_6">
+												<section className="_1Pzpn _37aQQ" data-role="widget" data-moduleid={3842169290} data-userid={65790742}>
+													<div className="_3ry_6">
 														<h2 className="_2v-eX" data-hook="widget-header">
 															<a href="https://www.deviantart.com/kenjimaru36/about#watching">Aperçu des ressources consultées</a>
 														</h2>
@@ -192,7 +193,7 @@ class MonCompte extends Component {
 																				xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 																				<path d="M14 3a1 1 0 011 1v1h5a1 1 0 010 2h-1v11.586a1 1 0 01-.293.707l-1.414 1.414a1 1 0 01-.707.293H7.414a1 1 0 01-.707-.293l-1.414-1.414A1 1 0 015 18.586V7H4a1 1 0 110-2h5V4a1 1 0 011-1h4zm3 4H7v11.171l.829.829h8.341l.83-.83V7zm-7 3a1 1 0 011 1v5a1 1 0 01-2 0v-5a1 1 0 011-1zm4 0a1 1 0 011 1v5a1 1 0 01-2 0v-5a1 1 0 011-1z" />
 																			</svg>
-															<span className="_15Han">Supprimer</span>
+                                      <span className="_15Han">Supprimer</span>
 																		</span>
 																	</span>
 																</button>
@@ -204,12 +205,11 @@ class MonCompte extends Component {
 																		</svg>
 																	</span>
 																	<span className="_15Han">Éditer</span>
-                                  							<a href="https://www.deviantart.com/kenjimaru36/about" className="_245L4" data-role="see-all-link">Plus</a>
+                                  <a href="https://www.deviantart.com/kenjimaru36/about" className="_245L4" data-role="see-all-link">Plus</a>
 																</button>
 															</div>
 														</div>
 													</div>
-												<section className="_1Pzpn _37aQQ" data-role="widget" data-moduleid={3842169290} data-userid={65790742}>
 													<div className="_2b0oa IhPPp _2i7yX">
 														<div className="_3gtUg">
 															<div className="_1bjhS">Aucune ressource consultée récemment</div>
@@ -606,7 +606,7 @@ class MonCompte extends Component {
 						</div>
 					</div>
 				</div>
-      </div>
+      </Fragment>
     )
   }
 }

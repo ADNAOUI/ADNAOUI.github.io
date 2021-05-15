@@ -39,7 +39,7 @@ const dashRoutes = [
     layout: "/ressources_relationnelles",
   },
   {
-    path: "/monCompte",
+    path: "/moncompte",
     name: "Mon Compte",
     icon:<MdAccountCircle/>,
     component: MonCompte,

@@ -1,10 +1,9 @@
 //*----- MODULES -----//
 import React, { Component }           from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Axios                          from 'axios';
 
 //*----- COMPOSANTS -----//
-import ResourceContainer              from '../views/ResourceContainer.js';
 import ResourceCard                   from './ResourceCard.js';
 
 //*----- STYLES -----//
@@ -95,13 +94,12 @@ class AccueilContainer extends Component {
   }
 
   render(){
-    //*----- MAPPING -----//
 
     //*----- CSS CONDITIONNEL -----//
     /**
      *  @const loadingTextCSS Affiche le message du chargement en fonction de l'état.
      **/
-    const loadingTextCSS = { display: this.state.loading ? "block" : "none" }; 
+    const loadingTextCSS = { display: this.state.loading ? "block" : "none" };
     return(
       <div>
           <div className="div_ResourceContainer">

@@ -1,6 +1,6 @@
 //*--- MODULES
-import React, {useState, Component} from 'react';
-import {Button, Form, Modal, InputGroup, FormControl} from 'react-bootstrap';
+import React, { useState, Component } from 'react';
+import { Form, Modal, InputGroup, FormControl } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 //*--- COMPOSANTS
