@@ -8,6 +8,7 @@ import { RiArticleLine } from "react-icons/ri";
 import { BsCameraVideo } from "react-icons/bs";
 import { IoGameControllerOutline } from "react-icons/io5";
 
+
 //CSS
 import '../assets/css/view/Tendances.css';
 import '../index.css';
