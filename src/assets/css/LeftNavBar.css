@@ -18,6 +18,9 @@
     margin-top: 25px;
     text-align: center;
 }
+.nav-link{
+    padding: 15px !important;
+}
 nav>ul>li>p.positionTextSeparationLeftNavBar{
     text-align: center;
     margin-top: 15px;

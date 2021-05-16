@@ -10,8 +10,8 @@ main{
 
 section{
   background-color: #ffffff;
-  margin-left: 230px;
-  margin-top: 55px;
+  margin-left: 230px !important;
+  margin-top: 55px !important;
 }
 
 code {
