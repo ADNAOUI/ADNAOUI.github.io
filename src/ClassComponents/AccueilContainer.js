@@ -5,6 +5,8 @@ import Axios                          from 'axios';
 
 //*----- COMPOSANTS -----//
 import ResourceCard                   from './ResourceCard.js';
+import Footer                         from "../components/Footer/Footer.js";
+import routesFooter                   from "../routesFooter.js";
 
 //*----- STYLES -----//
 import '../assets/css/view/AccueilContainer.css';
@@ -115,6 +117,7 @@ class AccueilContainer extends Component {
                ref={loadingRef => (this.loadingRef = loadingRef)}>
             <span style={loadingTextCSS}>Chargement...</span>
           </div>
+          <Footer {...this.props} routesFooter={routesFooter}/>
       </div>
     )
   }

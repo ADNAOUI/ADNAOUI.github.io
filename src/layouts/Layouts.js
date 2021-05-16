@@ -4,7 +4,6 @@ import { Route, Switch, Redirect } from "react-router-dom";
 
 // le core des components
 import LeftNavBar from "../components/LeftNavBar/LeftNavBar.js";
-import Footer from "../components/Footer/Footer.js";
 import TopNavBar from "../components/TopNavBar/TopNavBar.js";
 
 import routes from "../routes.js";
@@ -51,8 +50,6 @@ export default class Layouts extends React.Component {
           </Switch>
         </div>
 
-        <Footer {...this.props}
-          routesFooter={routesFooter}/>
       </main>
     );
   }

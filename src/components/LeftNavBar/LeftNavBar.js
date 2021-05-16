@@ -1,4 +1,5 @@
 //*--- MODULES
+import Axios from 'axios';
 import React, { useState, Component } from 'react';
 import { Form, Modal, InputGroup, FormControl } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
@@ -81,6 +82,14 @@ function ButtonAddRessource(props){
         var form = event.target
         var myRadioInput = form.elements.categorie.value
         console.log("radioValue : ", myRadioInput);
+
+        // axios({
+        //     method: 'post',
+        //     url: '',
+        //     data: {
+
+        //     }
+        // })
     }
 
     return(

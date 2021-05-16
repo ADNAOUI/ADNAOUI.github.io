@@ -4,6 +4,7 @@ import '../index.css';
 import '../assets/css/view/About.css';
 import LogoMs_Lab from '../assets/img/logoMs_Lab.png';
 
+
 export default class About extends Component {
 
   render()
