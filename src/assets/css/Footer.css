@@ -4,7 +4,7 @@ main {
 .sectionFooter {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 20px 0 0 0;
     clear: both;
     background: center/contain no-repeat url(/src/assets/img/footerBackground.png);
     text-align: center;
