@@ -27,6 +27,7 @@ import {FcSelfie} from 'react-icons/fc';
 
 const dashRoutes = [
   {
+    textSeparation:<p className="positionTextSeparationLeftNavBar">Explorer</p>,
     path: "/accueil",
     name: "Accueil",
     icon: <MdHome/>,
@@ -55,7 +56,7 @@ const dashRoutes = [
     layout: "/ressources_relationnelles",
   },
   {
-    textSeparation:"Améliorer vos relations",
+    textSeparation:<p className="positionTextSeparationLeftNavBar">Améliorer vos relations</p>,
     path: "/soi",
     name: "Soi",
     icon: <FcSelfie/>,
