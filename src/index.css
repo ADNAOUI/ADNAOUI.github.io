@@ -10,15 +10,11 @@ main{
 
 section{
   background-color: #ffffff;
-  margin-left: 230px !important;
-  margin-top: 55px !important;
+  margin-left: 230px;
+  margin-top: 55px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-.positionTextLoremIpsum{
-  display: flex;
-  flex-wrap: wrap;
 }

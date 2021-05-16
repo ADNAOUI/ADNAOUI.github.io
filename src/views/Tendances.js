@@ -1,20 +1,8 @@
 import React, {Component} from 'react';
-import {Button} from 'react-bootstrap';
-
-//Icons
-import { MdNewReleases } from "react-icons/md";
-import { AiOutlineHeart } from "react-icons/ai";
-import { RiArticleLine } from "react-icons/ri";
-import { BsCameraVideo } from "react-icons/bs";
-import { IoGameControllerOutline } from "react-icons/io5";
-
-
-
-
-
-//CSS
-import '../assets/css/view/Tendances.css';
 import '../index.css';
+
+import '../assets/css/view/Tendances.css';
+import ButtonVisitorSitePresentation from '../FunctionalComponents/ButtonVisitorSitePresentation';
 
 export default class Tendances extends Component {
 
@@ -23,14 +11,20 @@ export default class Tendances extends Component {
       <section>
           <h1 class="titleVisitorSitePresentation">Tendances des services de média sociaux</h1>
 
-        <div className="parentButtonTendances">
-          <Button>Nouveautés<MdNewReleases/></Button>
-          <Button>Les plus likés<AiOutlineHeart/></Button>
-          <Button>Articles<RiArticleLine/></Button>
-          <Button>Vidéos<BsCameraVideo/></Button>
-          <Button>Jeux<IoGameControllerOutline/></Button>
-        </div>
-         
+          <div class="col-12">
+            <p class="pVisitorSitePresentation">
+              It is a long established fact that a reader will be distracted by the
+              readable content of a page when looking at its layout. The point of using
+              Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+              as opposed to using 'Content here, content here', making it look like readable
+              English.
+            </p>
+          </div>
+
+          <div class="link col-12">
+            <a href="/" class="linkVisitorSitePresentation col-1">Présentation</a>
+            <ButtonVisitorSitePresentation text="Visiter" class="col-1"/>
+          </div>
       </section>
     );
   }
