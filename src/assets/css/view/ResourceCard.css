@@ -127,6 +127,12 @@
     justify-content: space-evenly;
     align-items: center;
 }
+.ligneStat {
+    margin-top: .1rem;
+    margin-left: -1rem;
+    text-align: center;
+    width: 3rem;
+}
 #resourceCard .iconResourceCard > span{
     padding: .1rem;
     color:white;

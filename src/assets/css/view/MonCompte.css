@@ -37865,7 +37865,7 @@
     font-style: normal;
   }
   @font-face {
-    font-family: devioussans02light;
+    font-family: Roboto;
     src: url(https://st.deviantart.net/fonts/devioussans-02-light.woff2)
         format("woff2"),
       url(https://st.deviantart.net/fonts/devioussans-02-light.woff)
@@ -37874,7 +37874,7 @@
     font-style: normal;
   }
   @font-face {
-    font-family: devioussans02medium;
+    font-family: Roboto;
     src: url(https://st.deviantart.net/fonts/devioussans-02-medium.woff2)
         format("woff2"),
       url(https://st.deviantart.net/fonts/devioussans-02-medium.woff)
@@ -37883,7 +37883,7 @@
     font-style: normal;
   }
   @font-face {
-    font-family: devioussans02regular;
+    font-family: Roboto;
     src: url(https://st.deviantart.net/fonts/devioussans-02-regular.woff2)
         format("woff2"),
       url(https://st.deviantart.net/fonts/devioussans-02-regular.woff)

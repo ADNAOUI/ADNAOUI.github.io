@@ -80,7 +80,7 @@ class ResourceCard extends Component {
                             <div className="row contentPictureResourceCard">
                                 <Card.Img
                                     style={{alignItems: 'center'}}
-                                    src={this.state.imagesRessources.map(imagesRessource => imagesRessource.download_url)} alt=""/>
+                                    src={this.props.tableRessources.IMAGE_RESSOURCE} alt=""/>
                             </div>
                             <div className="colorCardBadge">
                                 <span className="badgeRessourceCard" variant="primary">{this.props.tableRessources.DESIGNATION_CATEGORIE_RESSOURCE}</span>
@@ -116,7 +116,10 @@ function IconStatResourceCard(props){
     return(
         <div>
         <Card.Img src={props.name}/>
-        <span className="span_numberIconResourceCard">{props.number}</span>
+        <div className="ligneStat">
+            <span className="span_numberIconResourceCard">{props.number}</span>
+        </div>
+
         </div>
     )
 }
