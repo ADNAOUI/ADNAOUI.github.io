@@ -1,14 +1,73 @@
+main {
+    position: relative;
+}
 .sectionFooter {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 20px 0 0 0;
     clear: both;
     background: center/contain no-repeat url(/src/assets/img/footerBackground.png);
     text-align: center;
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     margin-left: 230px;
+    height: 245px;
+    align-items: center;
+    justify-content: space-evenly;
 }
+    .sectionFooter > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    .sectionFooter > div:nth-child(1) {
+        justify-content: flex-end;
+    }
+        .sectionFooter > div > .imgFooter:nth-child(1){
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+
+        .sectionFooter > div > .positionButtonContactFooter{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 10px;
+            width: 100%;
+        }
+        .sectionFooter > div > .positionButtonContactFooter > .buttonContactFooter{
+            background: transparent;
+            color: #E04980;
+            border: 3px solid #E04980;
+            text-transform: uppercase;
+            font-size: 18px;
+            padding: 5px 20px 5px 20px;
+        }
+            .sectionFooter > div > .positionButtonContactFooter > .buttonContactFooter:hover{
+                background-color: #E04980;
+                color: white;
+            }
+            .sectionFooter > div > .positionButtonContactFooter > .buttonContactFooter:active{
+                background-color: #fff;
+                color: #E04980;
+                border: 1px solid #fff;
+            }
+            .sectionFooter > div > .positionButtonContactFooter > .buttonContactFooter:focus{
+                outline: none !important;
+            }
+        .sectionFooter > div > .positionSocialIconsFooter{
+            position: absolute;
+            left: 10px;
+        }
+        .sectionFooter > div > .positionSocialIconsFooter > svg{
+            margin-right: 20px;
+            font-size: 25px;
+            color: #E04980;
+        }
+
 
 .titleFooter{
     color: white;
@@ -17,10 +76,13 @@
 }
 
 .imgFooter{
-    width: 95px;
-    margin-right: 30px;
-}
+    width: 8%;
+    background: #ffffff40;
 
+}
+    .imgFooter:last-child{
+        height: 100%;
+    }
 .textFooter{
     color: white;
     font-size: 15px;

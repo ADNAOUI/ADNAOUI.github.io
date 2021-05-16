@@ -13,17 +13,39 @@
     display: contents;
     position: absolute;
 }
-.nav-link{
-    margin-left: 20px;
-    padding: 0.2rem 1rem !important;
-}
+
 .LeftNavBar>ul>li>h5{
     margin-top: 25px;
     text-align: center;
 }
-nav>ul>li.active{
-    background-color: #604d54;
+nav>ul>li>p.positionTextSeparationLeftNavBar{
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+    padding: 5px 0 0 10px;
+    color: black;
+    margin-bottom: 10px;
 }
+
+nav>ul>li>a{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    cursor: pointer;
+    color: #707070;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+    nav>ul>li>a.active{
+        background-color: #604d54;
+        color: white !important;
+    }
+    nav>ul>li>a:hover{
+        background-color: #604d54;
+        color: white;
+    }
+
 nav>ul>li>i{
     color: #00B0F0;
     font-size: 25px;
@@ -40,12 +62,9 @@ nav>ul>li>a>label{
     padding-left: 10px;
     font-weight: 500;
 }
-nav>ul>li>label{
-    color: white;
-    font-size: 18px;
-    padding-left: 15px;
-    margin-top: 25px;
-}
+
+
+
 
 
 /*----------- BOUTON & MODALE : AJOUTER UNE RESSOURCE ------------*/
@@ -60,7 +79,7 @@ nav>ul>li>label{
   }
 .buttonAddResource {
     margin-left: .8rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: .8rem;
     border: none;
     background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
