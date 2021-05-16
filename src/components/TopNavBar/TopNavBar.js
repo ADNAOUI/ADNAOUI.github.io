@@ -7,6 +7,8 @@ import '../../assets/css/TopNavBar.css';
 //Images, Icones
 import { FaQuestion } from 'react-icons/fa';
 import Logo from '../../assets/img/logo/logoSombre.png';
+import iconSolaire from '../../assets/img/iconSolaire.png';
+
 
 export default class TopNavBar extends Component {
     render()
@@ -15,6 +17,7 @@ export default class TopNavBar extends Component {
             <div className="backgroundTopNavBar">
                 <img src={Logo} className="imgTopNavBar" alt="ressourcesRelationnelles" />
                 <div className="positionButtonConnexionInscription">
+                    <img src={iconSolaire} className="iconSolaireTopNavBar" alt="ressourcesRelationnelles" />
                     <ButtonInscription/>
                     <ButtonConnexion text="Se Connecter" />
                     <InterrogationPoint />
@@ -35,7 +38,7 @@ function ButtonInscription() {
     const handleShow = () => setShow(true);
 
     return (
-        <div>
+        <div className="parentButtonPositionInscriptionTopNavBar">
             <button className="buttonInscription" onClick={handleShow}>S'inscrire</button>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
