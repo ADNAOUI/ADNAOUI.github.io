@@ -2,6 +2,8 @@
 import AccueilContainer from "./ClassComponents/AccueilContainer.js";
 import Tendances from "./views/Tendances.js";
 import MonCompte from "./views/MonCompte.js";
+import APropos from "./views/APropos.js";
+import Galerie from "./views/Galerie.js";
 import Forum from "./views/Forum.js";
 import Soi from "./views/Soi.js";
 import Conjoints from "./views/Conjoints.js";
@@ -39,7 +41,7 @@ const dashRoutes = [
     layout: "/ressources_relationnelles",
   },
   {
-    path: "/monCompte",
+    path: "/moncompte",
     name: "Mon Compte",
     icon:<MdAccountCircle/>,
     component: MonCompte,

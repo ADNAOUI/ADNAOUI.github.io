@@ -1,6 +1,6 @@
 //*--- MODULES
-import React, {useState, Component} from 'react';
-import {Button, Form, Modal, InputGroup, FormControl} from 'react-bootstrap';
+import React, { useState, Component } from 'react';
+import { Form, Modal, InputGroup, FormControl } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 
 //*--- COMPOSANTS
@@ -67,10 +67,23 @@ function ButtonAddRessource(props){
     const categorieValue = '';
 
     //Fonction POST
-    // const handleClickCategorie = (props) => {
-    //     categorieValue = props.Test.value;
-    //     console.log(categorieValue);
-    // }
+    const handleClickCategorie = (props) => {
+        categorieValue = props.Test.value;
+        console.log(categorieValue);
+    }
+
+    const [Title, setTitle] = useState('');
+    console.log("Title : ", Title);
+    const [Categorie, setCategorie] = useState('');
+    const [TypesRessources, setTypeRessources] = useState('');
+    const [TypesRelations, setTypesRelations] = useState('');
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        var form = event.target
+        var myRadioInput = form.elements.categorie.value
+        console.log("radioValue : ", myRadioInput);
+    }
 
     return(
         <div>
@@ -81,9 +94,9 @@ function ButtonAddRessource(props){
                         <h1>Ajouter une ressource</h1>
                     </Modal.Header>
                     <Modal.Body style={{width: 1200, backgroundColor:'#F7F7F7', color:'#707070'}}>
-                        <Form.Group controlId="formAddResources">
+                        <Form.Group controlId="formAddResources" onSubmit={handleSubmit}>
                             <Form.Label>
-                                <Form.Control type="text" placeholder="Entrez un titre"/>
+                                <Form.Control name="Title" type="text" placeholder="Entrez un titre" onChange={event => setTitle(event.target.value)}/>
                             </Form.Label>
 
                             <div className="zoneCategorie">
@@ -243,7 +256,7 @@ function ButtonAddRessource(props){
                         </Form.Group>
                     </Modal.Body>
                     <Modal.Footer style={{width: 1200, backgroundColor:'#F7F7F7'}}>
-                        <input type="submit" class="btn_ValiderAddResource" onClick="{handleClose}" value="Valider"/>
+                        <input type="submit" class="btn_ValiderAddResource" value="Valider"/>
                     </Modal.Footer>
                 </Modal>
             </div>
