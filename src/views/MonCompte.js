@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 
 //*--- COMPOSANTS
-import RouteAccount from './RouteAccount.js';
+import Aperçu from './Aperçu.js';
+import Galerie from './Galerie.js';
+import Favoris from './Favoris.js';
+import Ressources from './Ressources.js';
+import APropos from './APropos.js';
+import Statistiques from './Statistiques.js';
 
 //*--- STYLES
 import '../assets/css/view/MonCompte.css';
@@ -62,6 +67,7 @@ class MonCompte extends Component {
 							<div className="DImwh">
 								<div style={{minHeight: '52px'}}>
 									<div className style={{zIndex: 30}}>
+									<BrowserRouter>
 										<nav className="cUIp3 _3VEWa" data-hook="profile_nav">
 											<span className="_3c9b0">
 												<h2>Profile Navigation</h2>
@@ -79,68 +85,86 @@ class MonCompte extends Component {
 												</div>
 											</div>
 
-											<RouteAccount />
-
-											<div className="_3v-Py">
-												<div tabIndex={0} role="button" aria-haspopup="listbox" aria-expanded="false">
-													<button className="_13eQn _1RQYI _1Hokl">
-														<span className="_3HH04 _3s0_v _2H5le _3kEx1 _3bHO3">
-															<svg width={0} height={0} viewBox="0 0 24 24" version="1.1"
-																xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-																<g>
-																	<path d="M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm-7 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm14 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
-																</g>
-															</svg>
-														</span>
-													</button>
+											
+												<div className="_2IzNv">
+													<Link className="_3rUER" to="/ressources_relationnelles/aperçu">Aperçu</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/galerie">Galerie</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/favoris">Favoris</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/ressources">Ressources</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/apropos">À propos</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/statistiques">Statistiques</Link>
 												</div>
-											</div>
-											<span>
-												<span>
-													<div>
-														<div className="_1aF7c">
-															<button className="_13eQn _1RQYI _1Hokl _3bHO3 HD49n">
-																<span className="_3HH04 _3s0_v _3kEx1">
-																	<svg
-																		xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-																		<path d="M5 16v2a1 1 0 01-.883.993L4 19a1 1 0 01-1-1v-2a8 8 0 018-8h1V3.562c0-.28.204-.511.471-.555L12.562 3h.144a1 1 0 01.613.21l.1.088 7.294 7.41a1 1 0 01.279.571l.008.13v.215a1 1 0 01-.174.564l-.073.095-7.33 8.376a1 1 0 01-.63.333l-.122.008h-.108a.563.563 0 01-.556-.471L12 20.438V16H5zm9-6h-3a6.102 6.102 0 00-1.431.172l-.324.089c-.14.043-.28.09-.415.144l-.304.127-.221.106-.216.114-.175.101-.122.076-.318.216-.079.058a6.024 6.024 0 00-.284.228l-.135.118-.205.195-.188.195-.129.144-.163.199-.136.179-.12.17-.14.213-.113.192-.115.213-.15.309-.147.363-.029.08L14 14v2.962l4.735-5.412L14 6.74V10z" />
-																	</svg>
-																</span>
-															</button>
-														</div>
-													</div>
-												</span>
-											</span>
-											<div className="_4HnhN _3izvs">
-												<div className="_38VMd">
-													<div tabIndex={0} className="_3yGwx" role="button" aria-haspopup="listbox" aria-expanded="false">
+
+												<div className="_3v-Py">
+													<div tabIndex={0} role="button" aria-haspopup="listbox" aria-expanded="false">
 														<button className="_13eQn _1RQYI _1Hokl">
-															<span className="qFWIQ">
-																<span className="_3HH04 _3s0_v _3kEx1 _3bHO3">
-																	<svg width={0} height={0} viewBox="0 0 24 24"
-																		xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-																		<g>
-																			<path d="M13 14h8v5.644c0 .75-.683 1.356-1.524 1.356H13v-7zm-2 0v7H4.525C3.683 21 3 20.393 3 19.644V14h8zM7.228 3.965a1.346 1.346 0 0 1 1.968 0c.268.297.68 1.435 1.07 2.86a2.11 2.11 0 0 0-.156.386c-1.43-.424-2.588-.881-2.882-1.173a1.524 1.524 0 0 1 0-2.073m7.539.031c.262-.277.612-.43.984-.43s.722.153.985.43.407.645.407 1.037c0 .391-.144.76-.405 1.035-.294.292-1.445.746-2.868 1.17a2.065 2.065 0 0 0-.163-.413c.387-1.41.794-2.533 1.06-2.829m4.78 3.708h-2.67c.37-.186.678-.379.865-.575 1.099-1.158 1.099-3.035 0-4.192a2.738 2.738 0 0 0-1.99-.868c-.721 0-1.442.289-1.991.868-.457.48-.896 1.667-1.254 2.89a1.865 1.865 0 0 0-.52-.082c-.182 0-.354.033-.52.081-.36-1.233-.803-2.436-1.264-2.92a2.734 2.734 0 0 0-1.99-.869c-.72 0-1.441.29-1.99.868-1.1 1.158-1.1 3.035 0 4.192.196.208.527.412.925.607H4.42c-.784 0-1.42.67-1.42 1.495v1.273c0 .826.636 1.495 1.42 1.495h6.495V7.763h2.134v4.204h6.497c.784 0 1.42-.67 1.42-1.495V9.199c0-.826-.636-1.495-1.42-1.495" />
-																		</g>
-																	</svg>
-																</span>
+															<span className="_3HH04 _3s0_v _2H5le _3kEx1 _3bHO3">
+																<svg width={0} height={0} viewBox="0 0 24 24" version="1.1"
+																	xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+																	<g>
+																		<path d="M12 10a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm-7 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm14 0a2 2 0 1 1 0 4 2 2 0 0 1 0-4z" />
+																	</g>
+																</svg>
 															</span>
 														</button>
 													</div>
 												</div>
-											</div>
-											<div className="_3izvs">
-												<button type="button" className="ucOYB LeP7k _30Ifr iQAgn _1jsZj" data-hook="user_watch_button">
-													<span className="_3HH04 _3OIXv">
-														<svg
-															xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
-															<path d="M4.75,3.25 L7,3.25 L7,4.75 L4.75,4.75 L4.75,7 L3.25,7 L3.25,4.75 L1,4.75 L1,3.25 L3.25,3.25 L3.25,1 L4.75,1 L4.75,3.25 Z" />
-														</svg>
+												<span>
+													<span>
+														<div>
+															<div className="_1aF7c">
+																<button className="_13eQn _1RQYI _1Hokl _3bHO3 HD49n">
+																	<span className="_3HH04 _3s0_v _3kEx1">
+																		<svg
+																			xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+																			<path d="M5 16v2a1 1 0 01-.883.993L4 19a1 1 0 01-1-1v-2a8 8 0 018-8h1V3.562c0-.28.204-.511.471-.555L12.562 3h.144a1 1 0 01.613.21l.1.088 7.294 7.41a1 1 0 01.279.571l.008.13v.215a1 1 0 01-.174.564l-.073.095-7.33 8.376a1 1 0 01-.63.333l-.122.008h-.108a.563.563 0 01-.556-.471L12 20.438V16H5zm9-6h-3a6.102 6.102 0 00-1.431.172l-.324.089c-.14.043-.28.09-.415.144l-.304.127-.221.106-.216.114-.175.101-.122.076-.318.216-.079.058a6.024 6.024 0 00-.284.228l-.135.118-.205.195-.188.195-.129.144-.163.199-.136.179-.12.17-.14.213-.113.192-.115.213-.15.309-.147.363-.029.08L14 14v2.962l4.735-5.412L14 6.74V10z" />
+																		</svg>
+																	</span>
+																</button>
+															</div>
+														</div>
 													</span>
-													<span className>Watch</span>
-												</button>
-											</div>
+												</span>
+												<div className="_4HnhN _3izvs">
+													<div className="_38VMd">
+														<div tabIndex={0} className="_3yGwx" role="button" aria-haspopup="listbox" aria-expanded="false">
+															<button className="_13eQn _1RQYI _1Hokl">
+																<span className="qFWIQ">
+																	<span className="_3HH04 _3s0_v _3kEx1 _3bHO3">
+																		<svg width={0} height={0} viewBox="0 0 24 24"
+																			xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+																			<g>
+																				<path d="M13 14h8v5.644c0 .75-.683 1.356-1.524 1.356H13v-7zm-2 0v7H4.525C3.683 21 3 20.393 3 19.644V14h8zM7.228 3.965a1.346 1.346 0 0 1 1.968 0c.268.297.68 1.435 1.07 2.86a2.11 2.11 0 0 0-.156.386c-1.43-.424-2.588-.881-2.882-1.173a1.524 1.524 0 0 1 0-2.073m7.539.031c.262-.277.612-.43.984-.43s.722.153.985.43.407.645.407 1.037c0 .391-.144.76-.405 1.035-.294.292-1.445.746-2.868 1.17a2.065 2.065 0 0 0-.163-.413c.387-1.41.794-2.533 1.06-2.829m4.78 3.708h-2.67c.37-.186.678-.379.865-.575 1.099-1.158 1.099-3.035 0-4.192a2.738 2.738 0 0 0-1.99-.868c-.721 0-1.442.289-1.991.868-.457.48-.896 1.667-1.254 2.89a1.865 1.865 0 0 0-.52-.082c-.182 0-.354.033-.52.081-.36-1.233-.803-2.436-1.264-2.92a2.734 2.734 0 0 0-1.99-.869c-.72 0-1.441.29-1.99.868-1.1 1.158-1.1 3.035 0 4.192.196.208.527.412.925.607H4.42c-.784 0-1.42.67-1.42 1.495v1.273c0 .826.636 1.495 1.42 1.495h6.495V7.763h2.134v4.204h6.497c.784 0 1.42-.67 1.42-1.495V9.199c0-.826-.636-1.495-1.42-1.495" />
+																			</g>
+																		</svg>
+																	</span>
+																</span>
+															</button>
+														</div>
+													</div>
+												</div>
+												<div className="_3izvs">
+													<button type="button" className="ucOYB LeP7k _30Ifr iQAgn _1jsZj" data-hook="user_watch_button">
+														<span className="_3HH04 _3OIXv">
+															<svg
+																xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+																<path d="M4.75,3.25 L7,3.25 L7,4.75 L4.75,4.75 L4.75,7 L3.25,7 L3.25,4.75 L1,4.75 L1,3.25 L3.25,3.25 L3.25,1 L4.75,1 L4.75,3.25 Z" />
+															</svg>
+														</span>
+														<span className>Watch</span>
+													</button>
+												</div>
+												
 										</nav>
+										<div>
+													<Route path="/ressources_relationnelles/aperçu" component={Aperçu}/>
+													<Route path="/ressources_relationnelles/galerie" component={Galerie}/>
+													<Route path="/ressources_relationnelles/favoris" component={Favoris}/>
+													<Route path="/ressources_relationnelles/ressources" component={Ressources}/>
+													<Route path="/ressources_relationnelles/apropos" component={APropos}/>
+													<Route path="/ressources_relationnelles/statistiques" component={Statistiques}/>
+												</div>
+											</BrowserRouter>
 									</div>
 								</div>
 							</div>
