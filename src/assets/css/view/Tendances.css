@@ -1,3 +1,56 @@
+/**************************************************************************
+                            Tendances Refontes
+**************************************************************************/
+.parentButtonTendances{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.parentButtonTendances > button{
+    padding: 20px;
+    margin: 20px;
+    width: 20%;
+    background: #edcbd9;
+    color: #363535;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #edcbd9;
+}
+.parentButtonTendances > button:hover{
+    background: #ffffff;
+    color: #e04b81;
+    border: 1px solid #e04b81;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 17%) 0 0 13px;
+}
+    .parentButtonTendances > button > svg{
+        position: absolute;
+        top: -25px;
+        right: 5px;
+        font-size: 50px;
+        color: #6786c0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .backgroundVisitorSitePresentation{
     background-color: #353535;
     margin-left: 250px;
@@ -10,8 +63,9 @@
 }
 .titleVisitorSitePresentation{
     font-family: Roboto;
-    font-size: 6rem;
-    color:#000;
+    font-size: 4rem;
+    color: #000;
+    text-align: center;
 }
 .pVisitorSitePresentation{
     font-family: Roboto;
