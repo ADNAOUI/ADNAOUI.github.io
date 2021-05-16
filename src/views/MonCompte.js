@@ -17,10 +17,9 @@ class MonCompte extends Component {
   render(){
     return(
       <div className="perimetreMonCompte">
-			<div className="Rw6FN IcyS1" style={{backgroundImage: 'url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d227bedd-ad80-4263-ab73-ad2712643afb/deeorvx-1f9bb7c8-1429-4adc-8377-90dbf0091536.png/v1/crop/w_1920,h_520,x_0,y_521,scl_1,q_85,strp/device_computer_by_kenjimaru36_deeorvx-fullview-cover.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2QyMjdiZWRkLWFkODAtNDI2My1hYjczLWFkMjcxMjY0M2FmYlwvZGVlb3J2eC0xZjliYjdjOC0xNDI5LTRhZGMtODM3Ny05MGRiZjAwOTE1MzYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Xb9-kqzDTgdsET-5H2Jqc823l3TbFf5MGLETkkSAkhY")'}} />
+			<div className="Rw6FN" style={{backgroundImage: 'url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d227bedd-ad80-4263-ab73-ad2712643afb/deeorvx-1f9bb7c8-1429-4adc-8377-90dbf0091536.png/v1/crop/w_1920,h_520,x_0,y_521,scl_1,q_85,strp/device_computer_by_kenjimaru36_deeorvx-fullview-cover.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2QyMjdiZWRkLWFkODAtNDI2My1hYjczLWFkMjcxMjY0M2FmYlwvZGVlb3J2eC0xZjliYjdjOC0xNDI5LTRhZGMtODM3Ny05MGRiZjAwOTE1MzYucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Xb9-kqzDTgdsET-5H2Jqc823l3TbFf5MGLETkkSAkhY")'}} />
         	    <div className="_2mK2v">
 					<div id="content-container" className="_2u8eq">
-						<div className="_2EDy-" />
 						<div className="_2eTWG">
 							<div className="_3HAOe">
 								<div className="_2xLBr b-LAZ">
@@ -64,10 +63,11 @@ class MonCompte extends Component {
 									</div>
 								</div>
 							</div>
+							<BrowserRouter>
 							<div className="DImwh">
 								<div style={{minHeight: '52px'}}>
 									<div className style={{zIndex: 30}}>
-									<BrowserRouter>
+
 										<nav className="cUIp3 _3VEWa" data-hook="profile_nav">
 											<span className="_3c9b0">
 												<h2>Profile Navigation</h2>
@@ -85,9 +85,9 @@ class MonCompte extends Component {
 												</div>
 											</div>
 
-											
+
 												<div className="_2IzNv">
-													<Link className="_3rUER" to="/ressources_relationnelles/aperçu">Aperçu</Link>
+													<Link className="_3rUER" to="/ressources_relationnelles/moncompte">Aperçu</Link>
 													<Link className="_3rUER" to="/ressources_relationnelles/galerie">Galerie</Link>
 													<Link className="_3rUER" to="/ressources_relationnelles/favoris">Favoris</Link>
 													<Link className="_3rUER" to="/ressources_relationnelles/ressources">Ressources</Link>
@@ -154,20 +154,21 @@ class MonCompte extends Component {
 														<span className>Watch</span>
 													</button>
 												</div>
-												
+
 										</nav>
 										<div>
-													<Route path="/ressources_relationnelles/aperçu" component={Aperçu}/>
-													<Route path="/ressources_relationnelles/galerie" component={Galerie}/>
-													<Route path="/ressources_relationnelles/favoris" component={Favoris}/>
-													<Route path="/ressources_relationnelles/ressources" component={Ressources}/>
-													<Route path="/ressources_relationnelles/apropos" component={APropos}/>
-													<Route path="/ressources_relationnelles/statistiques" component={Statistiques}/>
-												</div>
-											</BrowserRouter>
+
 									</div>
 								</div>
 							</div>
+								<Route path="/ressources_relationnelles/moncompte" component={Aperçu}/>
+								<Route path="/ressources_relationnelles/galerie" component={Galerie}/>
+								<Route path="/ressources_relationnelles/favoris" component={Favoris}/>
+								<Route path="/ressources_relationnelles/ressources" component={Ressources}/>
+								<Route path="/ressources_relationnelles/apropos" component={APropos}/>
+								<Route path="/ressources_relationnelles/statistiques" component={Statistiques}/>
+							</div>
+							</BrowserRouter>
 						</div>
 						<div className="KCgOw Wwbv8">
 							<div className="_1_XQ-">
