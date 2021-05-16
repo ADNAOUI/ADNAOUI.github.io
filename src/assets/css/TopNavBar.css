@@ -54,6 +54,15 @@ img.iconSolaireTopNavBar{
         background: linear-gradient(129deg, rgba(224,73,128,1) 0%, rgb(224 73 128 / 58%) 55%, rgb(1 96 130 / 50%) 89%);
         outline: none;
     }
+        .buttonInscription:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        background: linear-gradient(129deg, rgb(2 152 207 / 65%) 0%, 
+                                            rgb(224 73 128 / 47%) 55%, 
+                                            rgb(224 73 128 / 65%) 89%);
+        }
+    
 
 .interrogationPointTopBar{
     color: #001922;
