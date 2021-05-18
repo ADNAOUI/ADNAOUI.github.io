@@ -79,7 +79,7 @@ img.iconSolaireTopNavBar{
     display: none;
 }
 .activeContent{
-    display: grid;
+    display: flex;
     padding: 6px 12px;
 }
 .activeText{
@@ -94,8 +94,7 @@ img.iconSolaireTopNavBar{
 }
 .positionBoutonInscriptionConnexion{
     position: absolute;
-    top: 46px;
-    padding: auto;
+    top: 66px;    
     margin: 0;
     padding: 0;
 }
@@ -142,4 +141,14 @@ img.iconSolaireTopNavBar{
 .modal-header .close:hover{
     color: #E04980;
     text-shadow: none;
+}
+.logoModal {
+    width : 13% ;
+}
+.centerTitle {
+    width:100%;
+    justify-content: center;
+}
+.fullWidthForm {
+    width : 100%;
 }
