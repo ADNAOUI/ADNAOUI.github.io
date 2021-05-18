@@ -50,7 +50,7 @@ function ButtonInscription() {
                     </div>
                 </Modal.Header>
 
-                <Modal.Body classNameName={indexTabs === 1 ? 'activeContent' : 'content'}>
+                <Modal.Body className={indexTabs === 1 ? 'activeContent' : 'content'}>
                     <Form>
                         <Form.Group controlId="formInscriptionPseudo">
                             <Form.Label>
@@ -101,7 +101,7 @@ function ButtonInscription() {
                     </Form>
                 </Modal.Body>
 
-                <Modal.Body classNameName={indexTabs === 2 ? 'activeContent' : 'content'}>
+                <Modal.Body className={indexTabs === 2 ? 'activeContent' : 'content'}>
                     <Form>
                         <Form.Group  controlId="formConnexionID">
                             <Form.Label >
@@ -154,7 +154,7 @@ function ButtonConnexion(props) {
                         </div>
                     </Modal.Header>
     
-                    <Modal.Body classNameName={indexTabs === 1 ? 'activeContent' : 'content'}>
+                    <Modal.Body className={indexTabs === 1 ? 'activeContent' : 'content'}>
                         <Form>
                             <Form.Group controlId="formInscriptionPseudo">
                                 <Form.Label>
@@ -205,7 +205,7 @@ function ButtonConnexion(props) {
                         </Form>
                     </Modal.Body>
     
-                    <Modal.Body classNameName={indexTabs === 2 ? 'activeContent' : 'content'}>
+                    <Modal.Body className={indexTabs === 2 ? 'activeContent' : 'content'}>
                         <Form>
                             <Form.Group  controlId="formConnexionID">
                                 <Form.Label >
@@ -222,12 +222,11 @@ function ButtonConnexion(props) {
                             </Form.Group>
                         </Form>
                     </Modal.Body>
-                    <Modal.Footer className={indexTabs === 1 ? 'activeContent' : 'content'}>
-                        <div className="btnModal " onClick={handleClose}>S'inscrire</div>
+                    <Modal.Footer >
+                        <div className={indexTabs === 1 ? 'activeContent btnModal' : 'content btnModal'} onClick={handleClose}>S'inscrire</div>
+                        <div className={indexTabs === 2 ? 'activeContent btnModal' : 'content btnModal'} onClick={handleClose}>Se Connecter</div>
                     </Modal.Footer>
-                    <Modal.Footer className={indexTabs === 2 ? 'activeContent' : 'content'}>
-                        <div className="btnModal" onClick={handleClose}>Se Connecter</div>
-                    </Modal.Footer>
+                    
                 </Modal>
             </div>
     )
