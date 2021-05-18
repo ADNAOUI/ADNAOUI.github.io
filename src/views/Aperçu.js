@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 
-import Footer from "../components/Footer/Footer.js";
-import routesFooter from "../routesFooter.js";
-
 import '../assets/css/view/MonCompte.css';
 
 class Aperçu extends Component {
@@ -433,7 +430,6 @@ class Aperçu extends Component {
                     </div>
                 </div>
                 </div>
-                <Footer {...this.props} routesFooter={routesFooter}/>
             </div>
         );
     }
