@@ -1,0 +1,273 @@
+.LeftNavBar{
+    background: linear-gradient(146deg, rgb(250 250 250) 0%, rgb(252 204 221) 100%);
+    top: 3rem;
+    color: white;
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 1;
+}
+.LeftNavBar>ul{
+    list-style: none;
+    display: contents;
+    position: absolute;
+}
+
+.LeftNavBar>ul>li>h5{
+    margin-top: 25px;
+    text-align: center;
+}
+.nav-link{
+    padding: 15px !important;
+}
+nav>ul>li>p.positionTextSeparationLeftNavBar{
+    text-align: center;
+    margin-top: 15px;
+    border-top: 1px solid #DDDDDD;
+    padding: 5px 0 0 10px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+nav>ul>li>a{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    cursor: pointer;
+    color: #707070;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+    nav>ul>li>a.active{
+        background-color: #604d54;
+        color: white !important;
+    }
+    nav>ul>li>a:hover{
+        background-color: #604d54;
+        color: white;
+    }
+
+nav>ul>li>i{
+    color: #00B0F0;
+    font-size: 25px;
+}
+nav>ul>li>a>i{
+    color: #00b0f0;
+    font-size: 25px;
+    margin: 5px;
+}
+nav>ul>li>a>label{
+    cursor: pointer;
+    color: #707070;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+
+
+
+
+/*----------- BOUTON & MODALE : AJOUTER UNE RESSOURCE ------------*/
+ .custom-btn {
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+.buttonAddResource {
+    margin-left: .8rem;
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+    border: none;
+    background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
+    border-radius: 46px;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  .buttonAddResource:hover {
+      text-decoration: none;
+      color: white;
+      opacity: .9;
+  }
+.buttonAddResource span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+}
+.buttonAddResourceTransition::before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    transition: all 0.3s;
+}
+.custom-btn::before{
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+.custom-btn::after{
+    content:'';
+    position: absolute;
+    z-index:-1;
+    transition: all 0.3s;
+}
+/*------------ MODALE ADD RESOURCE ------------ */
+.form-check{
+    cursor: pointer;
+    padding:0 1.1rem;
+}
+.form-check-label{
+    cursor: pointer;
+}
+
+/*------------ CATEGORIE ADD RESOURCE ----------- */
+.categorieContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categorieContainer2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.categorieAddResource{
+    display:flex;
+}
+
+.badge_AddResource {
+    height: 30px;
+    border-style: solid;
+    border-color: #E04980;
+    border-radius: 20px;
+}
+.cb_AddResource {
+    cursor: pointer;
+}
+.colorCardBadge2 label:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #E04980;
+}
+input[type=radio]{
+    opacity: 1;
+}
+
+/*----------- BOUTTON ADD RESOURCE ------------*/
+
+.btn_ValiderAddResource {
+    border-style: none;
+    color:white;
+    width: 5rem;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #E04980 -39.12%, rgba(255, 255, 255, 0) 100%), #E04980;
+}
+
+/*---------- BADGES ----------*/
+.colorCardBadge2{
+    color: white;
+    height: 30px;
+}
+.badgeRessourceCard1{
+    border-radius: 15px;
+    background-color: #e04980;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(224, 73, 128);
+    border-width: 2px;
+}
+.badgeRessourceCard2{
+    border-radius: 15px;
+    background-color: #3fccff;
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(63, 204, 255);
+    border-width: 2px;
+}
+.badgeRessourceCard3{
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+
+.colorCardBadge3 label:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #00b0f0;
+}
+.badgeRessourceCard31{
+    width: 13.9rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+.badgeRessourceCard32{
+    width: 10rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #e04980;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #e04980;
+    border-width: 2px;
+}
+.badgeRessourceCard3A{
+    background-color: #00B0F0;
+}
+.badgeRessourceCard4{
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
+}
+.badgeRessourceCard41{
+    width: 13.9rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
+}
+.badgeRessourceCard42{
+    width: 10rem;
+    padding: 0 1rem;
+    text-align: center;
+    color: #3fccff;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: #3fccff;
+    border-width: 2px;
+}

@@ -4,6 +4,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main{
+  background-color: #ffffff;
+}
+
+section{
+  background-color: #ffffff;
+  margin-left: 230px !important;
+  margin-top: 55px !important;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

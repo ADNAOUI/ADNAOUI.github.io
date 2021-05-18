@@ -1,0 +1,46 @@
+.positionCardParentHelp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.positionCardHelp{
+    padding: 10px;
+    max-width: 360px;
+    min-height: 384px;
+    margin: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    box-shadow: rgb(0 0 0 / 17%) 0 0 13px;
+    border-radius: .25rem;
+}
+.positionCardHelp:hover{
+    border: 1px solid #fb2175;
+}
+.positionCardHelp > a:hover{
+    text-decoration: none !important;
+}
+.titreCardHelp{
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    margin-bottom: .75rem;
+    color: #e04980;
+}
+.imgCardposition{
+    max-width: 260px;
+    min-height: 200px;
+    display: flex;
+    margin: auto;
+}
+.imgCardpositionConditions{
+    max-width: 200px;
+    min-height: 200px;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,145 @@
+.backgroundTopNavBar{
+    background-color: #F7F7F7;
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    box-shadow: rgb(0 0 0 / 25%) 0 0 15px;
+}
+img.iconSolaireTopNavBar{
+    width: auto;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.imgTopNavBar{
+    width:150px;
+    position: absolute;
+    margin: 10px;
+}
+.positionButtonConnexionInscription{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.buttonConnexion{
+    margin: 12px;
+    padding: 5px;
+    color: #707070;
+    background: transparent;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+.parentButtonPositionInscriptionTopNavBar{
+    margin-right: 25px;
+}
+    .buttonInscription {
+        width: 100%;
+        margin: 12px 25px 12px 12px;
+        padding: .375rem .75rem;
+        border: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: 50px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        color: #fff;
+        background: linear-gradient(129deg, rgba(224,73,128,1) 0%, rgb(224 73 128 / 58%) 55%, rgb(1 96 130 / 50%) 89%);
+        outline: none;
+    }
+        .buttonInscription:hover {
+        background-position: right center; /* change the direction of the change here */
+        color: #fff;
+        text-decoration: none;
+        background: linear-gradient(129deg, rgb(2 152 207 / 65%) 0%, 
+                                            rgb(224 73 128 / 47%) 55%, 
+                                            rgb(224 73 128 / 65%) 89%);
+        }
+    
+
+.interrogationPointTopBar{
+    color: #001922;
+    margin: 20px 30px 22px 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+.modal-content {
+    background-color: #001922 !important;
+    color: #fff ;
+}
+
+.content{
+    display: none;
+}
+.activeContent{
+    display: grid;
+    padding: 6px 12px;
+}
+.activeText{
+    color :#E04980 ;
+    font-weight: bold;
+    border-bottom: 2px solid #E04980;
+    cursor: pointer;
+}
+.activeText:hover{
+    text-decoration: none;
+    color: #E04980;
+}
+.positionBoutonInscriptionConnexion{
+    position: absolute;
+    top: 46px;
+    padding: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.btnTopNavBarInsCon{
+    cursor: pointer;
+    color: white;
+}
+.btnTopNavBarInsCon:hover{
+    text-decoration: none;
+    color: #3FCCFF;
+}
+.btnTab{
+    border: none ;
+    color:#fff;
+    background-color: #001922;
+}
+.btnModal{
+    text-align: center;
+    background-color: #004158 ;
+    color : #3FCCFF;
+    margin: 12px;
+    margin-right: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.modal-header .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+}
+.modal-header .close:hover{
+    color: #E04980;
+    text-shadow: none;
+}

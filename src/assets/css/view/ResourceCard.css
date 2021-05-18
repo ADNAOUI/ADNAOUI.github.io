@@ -1,0 +1,145 @@
+#resourceCard {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+.cardRessource{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0px 20px 0px 0px;
+    border-color: #e04980;
+    border-width: 2px;
+
+}
+
+#resourceCard hr{
+    position: absolute;
+    margin-top: 19rem;
+    width: 100%;
+    height: .05rem;
+    background-color:#3FCCFF;
+}
+#resourceCard > .cardRessource{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25), 5px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*----------- HEADER ----------*/
+#resourceCard .lbl_publicationResourceCard {
+    background-image: url(/src/assets/img/BackgroundHeadCard.png);
+    background-repeat: no-repeat;
+    width:100%;
+}
+#resourceCard .span_publicationResourceCard {
+    padding: 7px;
+    font-size: 13px;
+    color: white;
+}
+.tailleTitreCardRessources{
+    font-size: 18px ;
+}
+
+/*---------- BODY ----------*/
+.badgeRessourceCard {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.badgeRessourceCard:nth-child(1){
+    border-radius: 15px;
+    background-color: rgb(224, 73, 128);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(224, 73, 128);
+    border-width: 2px;
+}
+.badgeRessourceCard:nth-child(2){
+    border-radius: 15px;
+    background-color: rgb(63, 204, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(63, 204, 255);
+    border-width: 2px;
+}
+.badgeRessourceCard:nth-child(3){
+    color: rgb(63, 204, 255);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    border-style: solid;
+    border-color: rgb(63, 204, 255);
+    border-width: 2px;
+}
+#resourceCard .titleResourceCard {
+    padding: 0 20px;
+    color: #707070;
+}
+#resourceCard .contentPictureResourceCard>img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 290px;
+    max-height: 200px;
+    padding: 0 20px 10px 20px;
+}
+#resourceCard .ProfilPictureResourceCard{
+    display: flex;
+    position: relative;
+    padding-top: 1.2rem;
+    margin: 0;
+    margin-top: 5px;
+}
+#resourceCard .span_PseudonymeMembreResourceCard{
+    margin-left: .9rem;
+    color:#707070;
+}
+#resourceCard .span_ProfessionMembreResourceCard{
+    position:absolute;
+    font-style: italic;
+    font-size: .9rem;
+    margin-top: 1.2rem;
+    margin-left: 3.4rem;
+    color:#707070;
+}
+.colorCardBadge{
+    color: white;
+    height: 50px;
+}
+
+/*----------- FOOTER ----------*/
+.FooterResourceCard {
+    background: linear-gradient(
+90deg
+, rgb(224 73 128 / 84%) 62%, rgb(0 176 240 / 72%) 100%);    height: 50px;
+}
+#resourceCard .iconResourceCard{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ligneStat {
+    margin-top: .1rem;
+    margin-left: -1rem;
+    text-align: center;
+    width: 3rem;
+}
+#resourceCard .iconResourceCard > span{
+    padding: .1rem;
+    color:white;
+    font-weight: bold;
+    width: 1.5rem;
+    margin-top: -.7rem;
+}
+#resourceCard .iconResourceCard > span .span_numberIconResourceCard {
+    margin-left: .3rem;
+}

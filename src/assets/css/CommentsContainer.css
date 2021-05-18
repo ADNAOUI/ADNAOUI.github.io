@@ -1,0 +1,35 @@
+.comments-title {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.perimetreCommentsContainer .h2, h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: clamp(1.8rem,calc(1.8rem + .2vw),3rem);
+    letter-spacing: -.05rem;
+    font-weight: 800;
+}
+.breadcrumbs .breadcrumb_last, h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+    margin: 0 0 1.5rem;
+    line-height: 1.1;
+}
+.comments-title span {
+    position: relative;
+}
+.comments-title span:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(
+        130deg,
+        #e04980,
+        #e04980 41.07%,
+        #3FCCFF 76.05%
+    );
+}
