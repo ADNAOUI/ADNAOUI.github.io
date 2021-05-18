@@ -7,6 +7,7 @@ import '../../assets/css/TopNavBar.css';
 //Images, Icones
 import { FaQuestion } from 'react-icons/fa';
 import Logo from '../../assets/img/logo/logoSombre.png';
+import LogoModal from '../../assets/img/logo/logoResponsive.png';
 import iconSolaire from '../../assets/img/iconSolaire.png';
 
 
@@ -41,9 +42,10 @@ function ButtonInscription() {
         <div className="parentButtonPositionInscriptionTopNavBar">
             <button className="buttonInscription" onClick={handleShow}>S'inscrire</button>
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                    <Modal.Title className={indexTabs === 1 ? 'activeContent' : 'content'}>S'inscrire a RE</Modal.Title>
-                    <Modal.Title className={indexTabs === 2 ? 'activeContent' : 'content'}>Se connecter a RE</Modal.Title>
+                <Modal.Header  closeButton>
+                    <img src={LogoModal} alt="Logo ressource relationelles" className="logoModal" />
+                    <Modal.Title className={indexTabs === 1 ? 'activeContent centerTitle' : 'content'}>S'inscrire a RE</Modal.Title>
+                    <Modal.Title className={indexTabs === 2 ? 'activeContent  centerTitle' : 'content'}>Se connecter a RE</Modal.Title>
                     <div className="positionBoutonInscriptionConnexion" >
                         <a className={indexTabs === 1 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(1) }>S'inscrire </a>
                         <a className={indexTabs === 2 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(2) }>Se connecter </a>
@@ -102,7 +104,7 @@ function ButtonInscription() {
                 </Modal.Body>
 
                 <Modal.Body className={indexTabs === 2 ? 'activeContent' : 'content'}>
-                    <Form>
+                    <Form className="fullWidthForm">
                         <Form.Group  controlId="formConnexionID">
                             <Form.Label >
                                 Identifiant
@@ -115,14 +117,13 @@ function ButtonInscription() {
                                 Mot de passe
                                 </Form.Label>
                                 <Form.Control type="password"/>
+                                <Form.Text>Mot de passe oublié ?</Form.Text>
                         </Form.Group>
                     </Form>
                 </Modal.Body>
-                <Modal.Footer className={indexTabs === 1 ? 'activeContent' : 'content'}>
-                    <div className="btnModal " onClick={handleClose}>S'inscrire</div>
-                </Modal.Footer>
-                <Modal.Footer className={indexTabs === 2 ? 'activeContent' : 'content'}>
-                    <div className="btnModal" onClick={handleClose}>Se Connecter</div>
+                <Modal.Footer>
+                    <div  className={indexTabs === 1 ? 'activeContent btnModal' : 'content btnModal'} onClick={handleClose}>S'inscrire</div>
+                    <div className={indexTabs === 2 ? 'activeContent btnModal' : 'content btnModal'} onClick={handleClose}>Se Connecter</div>
                 </Modal.Footer>
             </Modal>
         </div>
@@ -146,12 +147,14 @@ function ButtonConnexion(props) {
                 <button className="leftNavBar-bouton buttonConnexion" onClick={handleShow} >{props.text}</button>
                 <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title className={indexTabs === 1 ? 'activeContent' : 'content'}>S'inscrire a RE</Modal.Title>
-                        <Modal.Title className={indexTabs === 2 ? 'activeContent' : 'content'}>Se connecter a RE</Modal.Title>
+                        <img src={LogoModal} alt="Logo ressource relationelles" className="logoModal"/>
+                        <Modal.Title className={indexTabs === 1 ? 'activeContent  centerTitle' : 'content'}>S'inscrire a RE</Modal.Title>
+                        <Modal.Title className={indexTabs === 2 ? 'activeContent  centerTitle' : 'content'}>Se connecter a RE</Modal.Title>
                         <div className="positionBoutonInscriptionConnexion" >
                             <a className={indexTabs === 1 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(1) }>S'inscrire </a>
                             <a className={indexTabs === 2 ? 'activeText col-6' : 'col-6 btnTopNavBarInsCon'} onClick={() =>  indexTabsContent(2) }>Se connecter </a>
                         </div>
+                        
                     </Modal.Header>
     
                     <Modal.Body className={indexTabs === 1 ? 'activeContent' : 'content'}>
@@ -206,7 +209,7 @@ function ButtonConnexion(props) {
                     </Modal.Body>
     
                     <Modal.Body className={indexTabs === 2 ? 'activeContent' : 'content'}>
-                        <Form>
+                        <Form className="fullWidthForm">
                             <Form.Group  controlId="formConnexionID">
                                 <Form.Label >
                                     Identifiant
@@ -219,6 +222,7 @@ function ButtonConnexion(props) {
                                     Mot de passe
                                     </Form.Label>
                                     <Form.Control type="password"/>
+                                    <Form.Text>Mot de passe oublié ?</Form.Text>
                             </Form.Group>
                         </Form>
                     </Modal.Body>
